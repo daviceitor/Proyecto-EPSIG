@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  licences_amount: 1
+  recurrent_services_amount: 1
+  no_recurrent_services_amount: 1
+  offer_id: 1
+
+two:
+  licences_amount: 1
+  recurrent_services_amount: 1
+  no_recurrent_services_amount: 1
+  offer_id: 1

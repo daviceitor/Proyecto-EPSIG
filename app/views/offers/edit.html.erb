@@ -1,0 +1,126 @@
+<%= javascript_include_tag "jquery-1.4.3.min.js" %>
+<%= javascript_include_tag "jquery-ui-1.8.6.custom.min.js" %>
+<%= javascript_include_tag "application.js" %>
+<%= stylesheet_link_tag "smoothness/jquery-ui-1.8.6.custom.css" %>
+<%= stylesheet_link_tag 'offers.css' %>
+
+<div class="content">
+
+  <div class="content-header">
+    <p style="color: green"><%= notice %></p>
+    <h2 class="title"><%= "Propuesta  #{@offer.id}" %></h2>
+  </div>
+
+  <div class="content-body">
+
+    <% form_for @offer, :html => { :multipart => true } do |f| %>
+      <%= f.error_messages %>
+
+      <dl>
+        <dt><%= f.label :commercial_id, "Comercial" %></dt>
+        <% if current_user.Operation_manager? %>
+          <dd><%= f.select :commercial_id, get_account_manager_for_select, :selected => @offer.commercial_id.to_i  %></dd>
+        <% else %>
+          <dd><%= @offer.commercial.name %></dd>
+        <% end %>
+
+        <dt><%= f.label :account_id, "Cuenta" %></dt>
+        <dd><%= f.select :account_id, get_accounts_for_select, :selected => @offer.account_id %></dd>
+
+        <dt><%= f.label :offer_type_id, "Fabricante/Herramienta" %></dt>
+        <dd><%= f.select :offer_type_id, get_offer_types_for_select, :selected => @offer.offer_type_id %><br/>
+          <span class="help-text">Fabricante de la herramienta cuya licencia y/o servicios se ofertan en la propuesta</span>
+        </dd>
+
+        <dt><%= f.label :state, "Estado" %></dt>
+        <dd><%= f.select :state, valid_states(@offer), :selected => @offer.aasm_current_state.to_s %></dd>
+
+        <div id="pending-data">
+
+          <dt><%= f.label :win_probability, "Probabilidad Ganar" %></dt>
+          <dd><%= f.text_field :win_probability, :maxlength => 3, :autocomplete => "off" %> %  <div id="slider"></div> </dd>
+
+          <dt><%= f.label :estimated_date_resolution, "Fecha Estimada Resolución" %></dt>
+          <dd><%= f.text_field :estimated_date_resolution, :size => 8, :value => "#{l @offer.estimated_date_resolution unless @offer.estimated_date_resolution.nil?}" %></dd>
+
+        </div>
+
+        <div id="win-data" class="form-ident">
+
+          <dt><h3 class="underline">Seguimiento:</h3></dt>
+
+          <dt><%= f.label :approved_doc, "Documento Aprobación" %></dt>
+          <dd><%= f.file_field :approved_doc %><br/>
+            <span class="help-text">Archivo con la propuesta firmada o e-mail con la confirmación de aceptación</span>
+          </dd>
+
+          <% if current_user.can_assign_responsable? %>
+
+            <dt><%= f.label :responsable_id, "Jefe de proyecto" %></dt>
+            <dd><%= f.select :responsable_id, get_project_managers_for_select.insert(0,["(Sin Asignar)",""]), :selected => @offer.responsable_id %></dd>
+
+          <% end %>
+
+        </div>
+
+      </dl>
+      <div class="actions">
+        <%= image_tag('save.png') %>
+        <%= f.submit 'Guardar', :class => "submit" %>
+        <%= image_tag("cancel.png")%> <%= link_to 'Volver', offers_path %>
+      </div>
+      <div class="spinner">
+        Guardando... <%= image_tag("spinner.gif") %>
+      </div>
+
+
+    <% end %>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready (function(){
+    $('#offer_estimated_date_resolution').datepicker({dateFormat: 'dd/mm/yy'})
+
+    var show_data = {
+      "Pendiente": function(){
+        $('#pending-data').show();
+        $('#win-data').hide();
+      },
+      "Ganada" : function(){
+        $('#win-data').show();
+        $('#pending-data').hide();
+      },
+      "Perdida" : function(){
+        $('#win-data').hide();
+        $('#pending-data').hide();
+      }
+    }
+    
+    show_data[$("#offer_state").val()]()
+
+    $("#offer_state").change(function(){
+      show_data[$("#offer_state").val()]()
+    });
+
+    $("#slider").slider({ max: 100 });
+    $("#slider").slider({ value: <%= "#{@offer.win_probability.to_i}" %> });
+
+    $("#slider").slider({
+      slide: function(event, ui) { $("#offer_win_probability").val(ui.value) }
+    });
+
+    $('#offer_win_probability').keyup(function(){
+      $("#slider").slider({ value: $(this).val() });
+    });
+
+    $(".spinner").hide()
+
+    $(".submit").click(function(){
+      $(".actions").hide();
+      $(".spinner").show()
+    });
+
+  });
+</script>

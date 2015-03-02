@@ -1,0 +1,354 @@
+# Spanish translations for Rails
+# by Francisco Fernando García Nieto (ffgarcianieto@gmail.com)
+
+
+es:
+ 
+  user:
+    class: "Usuario"
+    plural: "Usuarios"
+    actions:
+      reset_password: "Generar contraseña"
+    attr:
+      email: "Email"
+      password: "Contraseña"
+      name: "Nombre"
+      password_confirmation: "Confirmación de contraseña"
+      role: "Rol"
+    number_of: "Número de usuarios"
+
+  account:
+    class: "Cuenta"
+    plural: "Cuentas"
+    actions:
+      new: "Nueva Cuenta"
+    attr:
+      description: "Descripción"
+      account_type: "Tipo"
+      name: "Nombre"
+      industry_type: "Industria"
+
+  bill:
+    class: "Factura"
+    plural: "Facturas"
+    attr:
+      cod: "Código"
+      charged: "Cobrada"
+      charged_date: "Fecha de Cobro"
+
+  contact:
+    class: "Contacto"
+    plural: "Contactos"
+    attr:
+      seat: "Sede"
+      name: "Nombre"
+      sur_name: "Apellidos"
+      lead_source: "Fuente del lead"
+      description: "Descripción"
+      title: "Cargo"
+      department: "Departamento"
+      contact_means: "Medios de contacto"
+
+  seat:
+    class: "Sede"
+    plural: "Sedes"
+    attr:
+      account: "Cuenta"
+      name: "Nombre"
+      street: "Calle"
+      city: "Ciudad"
+      state: "Estado"
+      postalcode: "Código postal"
+      country: "País"
+      contact_means: "Medios de contacto"
+
+  resource:
+    class: "Recurso"
+    plural: "Recursos"
+    attr:
+      name: "Nombre"
+      user: "Usuario"
+
+  offer_type:
+    class: "Tipo Propuesta"
+    plural: "Tipos de Propuesta"
+    attr:
+      name: "Nombre"
+
+  offer:
+    class: "Propuesta"
+    plural: "Propuestas"
+    attr:
+      description: "Descripción"
+      state: "Estado"
+      commercial: "Comercial"
+      creation_day: "Fecha creación"
+      full_billed: "Facturada"
+      order_cod: "Código de pedido"
+      win_probability: "Probabilidad de ganar"
+      estimated_date_resolution: "Fecha estimada de resolución"
+      intermediary: "Intermediario"
+      approved_doc: "Documentación de aprovación"
+
+  version:
+    class: "Versión"
+    plural: "Versiones"
+    attr:
+      cod: "Código"
+      licences_amount: "Cantidad para Licencias"
+      recurrent_services_amount: "Cantidad servicios recurrentes"
+      no_recurrent_services_amount: "Cantidad servicios no recurrentes"
+      doc: "Documento"
+
+  affirmation: "Si"
+  negation: "No"
+  empty: "Campo vacío"
+  #
+  # COMMON PART
+  #
+  number:
+    # Used in number_with_delimiter()
+    # These are also the defaults for 'currency', 'percentage', 'precision', and 'human'
+    format:
+      # Sets the separator between the units, for more precision (e.g. 1.0 / 2.0 == 0.5)
+      separator: ","
+      # Delimets thousands (e.g. 1,000,000 is a million) (always in groups of three)
+      delimiter: "."
+      # Number of decimals, behind the separator (1 with a precision of 2 gives: 1.00)
+      precision: 3
+
+    # Used in number_to_currency()
+    currency:
+      format:
+        # Where is the currency sign? %u is the currency unit, %n the number (default: $5.00)
+        format: "%n %u"
+        unit: "€"
+        # These three are to override number.format and are optional
+        separator: ","
+        delimiter: "."
+        precision: 0
+
+    # Used in number_to_percentage()
+    percentage:
+      format:
+        # These three are to override number.format and are optional
+        # separator:
+        delimiter: ""
+        # precision:
+
+    # Used in number_to_precision()
+    precision:
+      format:
+        # These three are to override number.format and are optional
+        # separator:
+        delimiter: ""
+        # precision:
+
+    # Used in number_to_human_size()
+    human:
+      format:
+        # These three are to override number.format and are optional
+        # separator:
+        delimiter: ""
+        precision: 1
+      # Rails <= v2.2.2
+      # storage_units: [Bytes, KB, MB, GB, TB]
+      # Rails >= v2.3
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one:   "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+
+  # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
+  datetime:
+    distance_in_words:
+      half_a_minute: "medio minuto"
+      less_than_x_seconds:
+        one:  "menos de 1 segundo"
+        other: "menos de %{count} segundos"
+      x_seconds:
+        one:  "1 segundo"
+        other: "%{count} segundos"
+      less_than_x_minutes:
+        one:  "menos de 1 minuto"
+        other: "menos de %{count} minutos"
+      x_minutes:
+        one:  "1 minuto"
+        other: "%{count} minutos"
+      about_x_hours:
+        one:  "alrededor de 1 hora"
+        other: "alrededor de %{count} horas"
+      x_days:
+        one:  "1 día"
+        other: "%{count} días"
+      about_x_months:
+        one:  "alrededor de 1 mes"
+        other: "alrededor de %{count} meses"
+      x_months:
+        one:  "1 mes"
+        other: "%{count} meses"
+      about_x_years:
+        one:  "alrededor de 1 año"
+        other: "alrededor de %{count} años"
+      over_x_years:
+        one:  "más de 1 año"
+        other: "más de %{count} años"
+      almost_x_years:
+        one: "casi 1 año"
+        other: "casi %{count} años"
+    prompts:
+      year:   "Año"
+      month:  "Mes"
+      day:    "Día"
+      hour:   "Hora"
+      minute: "Minutos"
+      second: "Segundos"
+
+  activerecord:
+    errors:
+      template:
+        header:
+          one:   "No se pudo guardar este/a %{model} porque se encontró 1 error"
+          other:  "No se pudo guardar este/a %{model} porque se encontraron %{count} errores"
+        # The variable :count is also available
+        body: "Se encontraron problemas con los siguientes campos:"
+
+      # The values :model, :attribute and :value are always available for interpolation
+      # The value :count is available when applicable. Can be used for pluralization.
+      messages:
+        inclusion: "no está incluido en la lista"
+        exclusion: "está reservado"
+        invalid: "no es válido"
+        confirmation: "no coincide con la confirmación"
+        accepted: "debe ser aceptado"
+        empty: "no puede estar vacío"
+        blank: "no puede estar en blanco"
+        too_long: "es demasiado largo (%{count} caracteres máximo)"
+        too_short: "es demasiado corto (%{count} caracteres mínimo)"
+        wrong_length: "no tiene la longitud correcta (%{count} caracteres exactos)"
+        taken: "ya está en uso ('%{value}')"
+        not_a_number: "no es un número"
+        greater_than: "debe ser mayor que %{count}"
+        greater_than_or_equal_to: "debe ser mayor que o igual a %{count}"
+        equal_to: "debe ser igual a %{count}"
+        less_than: "debe ser menor que %{count}"
+        less_than_or_equal_to: "debe ser menor que o igual a %{count}"
+        odd: "debe ser impar"
+        even: "debe ser par"
+        record_invalid: "La validación falló: %{errors}"
+        # Append your own errors here or at the model/attributes scope.
+
+      full_messages:
+        format: "%{attribute} %{message}"
+
+    models:
+      account: "Cuenta"
+      offer: "Propuesta"
+      version: "Versión"
+      contact: "Contacto"
+      seat: "Sede"
+      bill: "Factura"
+      offer_type: "Tipo Propuesta"
+      resource: "Recurso"
+      user: "Usuario"
+
+    attributes:
+      user:
+        email: "Email"
+        password: "Contraseña"
+        name: "Nombre"
+        password_confirmation: "Confirmación de contraseña"
+        role: "Rol"
+      account:
+        description: "Descripción"
+        account_type: "Tipo"
+        name: "Nombre"
+        industry_type: "Industria"
+      bill:
+        cod: "Código"
+        charged: "Cobrada"
+        charged_date: "Fecha de Cobro"
+      contact:
+        name: "Nombre"
+        sur_name: "Apellidos"
+        lead_source: "Fuente del lead"
+        description: "Descripción"
+        title: "Cargo"
+        department: "Departamento"
+        contact_means: "Medios de contacto"
+      seat:
+        name: "Nombre"
+        street: "Calle"
+        city: "Ciudad"
+        state: "Estado"
+        postalcode: "Código postal"
+        country: "País"
+        contact_means: "Medios de contacto"
+      resource:
+        name: "Nombre"
+      offer_type:
+        name: "Nombre"
+      offer:
+        description: "Descripción"
+        state: "Estado"
+        commercial: "Comercial"
+        creation_day: "Fecha creación"
+        full_billed: "Facturada"
+        order_cod: "Código de pedido"
+        win_probability: "Probabilidad de ganar"
+        estimated_date_resolution: "Fecha estimada de resolución"
+        intermediary: "Intermediario"
+        approved_doc: "Documentación de aprovación"
+      version:
+        cod: "Código"
+        licences_amount: "Cantidad para Licencias"
+        recurrent_services_amount: "Cantidad servicios recurrentes"
+        no_recurrent_services_amount: "Cantidad servicios no recurrentes"
+        doc: "Documento"
+  date:
+    formats:
+      # Use the strftime parameters for formats.
+      # When no format has been given, it uses default.
+      # You can provide other formats here if you like!
+      default: "%e/%m/%Y"
+      short: "%e de %b"
+      long: "%e de %B de %Y"
+      month_and_year: "%B de %Y"
+
+    day_names: [Lunes, Martes, Miércoles, Jueves, Viernes, Sábado, Domingo]
+    abbr_day_names: [Lun, Mar, Mie, Jue, Vie, Sab, Dom]
+
+    # Don't forget the nil at the beginning; there's no such thing as a 0th month
+    month_names: [~, Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Octubre, Noviembre, Diciembre]
+    abbr_month_names: [~, Ene, Feb, Mar, Abr, May, Jun, Jul, Ago, Sep, Oct, Nov, Dic]
+    # Used in date_select and datime_select.
+    order: [ :day, :month, :year ]
+
+  time:
+    formats:
+      default: "%A, %e de %B de %Y %H:%M:%S %z"
+      short: "%e de %B de %Y"
+      long: "%e de %B de %Y %H:%M"
+      very_short: "%e/%m/%Y"
+    am: "am"
+    pm: "pm"
+
+# Used in array.to_sentence.
+  support:
+    select:
+      # default value for :prompt => true in FormOptionsHelper
+      prompt: "Por favor seleccione"
+    array:
+      # Rails <= v.2.2.2
+      # sentence_connector: "y"
+      # Rails >= v.2.3
+      words_connector: ", "
+      two_words_connector: " y "
+      last_word_connector: " y "
+

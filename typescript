@@ -1,0 +1,1447 @@
+Script iniciado (vie 26 nov 2010 09:18:17 CET
+)]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> Account.industry_types[rand_with_range(0..Account.industry_types.length)]
+NoMethodError: undefined method `rand_with_range' for #<Object:0xb786e950>
+	from (irb):1
+>> Account.industry_types[rand_with_range(0..Account.industry_types.length)][1Pand_with_range(0..Account.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pnd_with_range(0..Account.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pd_with_range(0..Account.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P_with_range(0..Account.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pwith_range(0..Account.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pith_range(0..Account.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pth_range(0..Account.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Ph_range(0..Account.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P_range(0..Account.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Prange(0..Account.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pange(0..Account.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pnge(0..Account.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pge(0..Account.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pe(0..Account.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P(0..Account.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P0..Account.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P..Account.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1PAccount.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1PAccount.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pccount.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pount.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pount.industry_types.length)][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Punt.industry_types.length)][1Pnt.industry_types.length)][1Pt.industry_types.length)][1P.industry_types.length)][1Pindustry_types.length)][1Pndustry_types.length)][1Pdustry_types.length)][1Pustry_types.length)][1Pstry_types.length)][1Ptry_types.length)][1Pry_types.length)][1Py_types.length)][1P_types.length)][1Ptypes.length)][1Pypes.length)][1Ppes.length)][1Pes.length)][1Ps.length)][1P.length)][1Plength)][1Pength)][1Pngth)][1Pgth)][1Pth)][1Ph)][1P)][1P][K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KRandom.new.rand(20..30)
+NameError: uninitialized constant Random
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:443:in `load_missing_constant'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+	from (irb):2
+>> rand()5)
+=> [0;36m4[0;0m
+>> rand(5)
+=> [0;36m2[0;0m
+>> 
+?> rand(5)
+=> [0;36m2[0;0m
+>> rand(5)
+=> [0;36m1[0;0m
+>> rand(5)
+=> [0;36m3[0;0m
+>> rand(5)
+=> [0;36m2[0;0m
+>> rand(5)
+=> [0;36m4[0;0m
+>> rand(5)
+=> [0;36m3[0;0m
+>> rand(5)
+=> [0;36m3[0;0m
+>> rand(5)
+=> [0;36m2[0;0m
+>> rand(5)
+=> [0;36m3[0;0m
+>> rand(5)
+=> [0;36m1[0;0m
+>> rand(5)
+=> [0;36m2[0;0m
+>> rand(5)
+=> [0;36m0[0;0m
+>> rand(5)
+=> [0;36m2[0;0m
+>> rand(5)[1P)A)c)c)o)u)n)t).)a)c)c)o)u)n)t)_)t)y)p)e).)l)e)n)g)t)h)
+NoMethodError: undefined method `account_type' for #<Class:0xb6e85efc>
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/base.rb:1994:in `method_missing_without_paginate'
+	from /home/david/projects/Intranet/vendor/plugins/will_paginate/lib/will_paginate/finder.rb:170:in `method_missing'
+	from (irb):19
+>> rand(Account.account_type.length)[C[C[C[C[C[1Pand(Account.account_type.length)[C[C[C[1Pnd(Account.account_type.length)[C[C[C[1Pd(Account.account_type.length)[C[C[C[1P(Account.account_type.length)[C[C[C[1PAccount.account_type.length)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Plength)[1Pength)[1Pngth)[1Pgth)[1Pth)[1Ph)[1P)[K[]0]
+NoMethodError: undefined method `account_type' for #<Class:0xb6e85efc>
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/base.rb:1994:in `method_missing_without_paginate'
+	from /home/david/projects/Intranet/vendor/plugins/will_paginate/lib/will_paginate/finder.rb:170:in `method_missing'
+	from (irb):20
+>> Account.account_type[0][C[C[Crand(Account.account_type.length)[C[C[C[10PAccount.account_type[0]s[0]
+=> [0;31m"[0;0m[0;36mCompetitor[0;0m[0;31m"[0;0m
+>> Account.account_types[0][1P[0][C[C[Crand(Account.account_type.length)[Cs.length)
+=> [0;36m3[0;0m
+>> rand(Account.account_types.length)
+=> [0;36m5[0;0m
+>> rand(Account.account_types.length)
+=> [0;36m2[0;0m
+>> rand(Account.account_types.length)
+=> [0;36m5[0;0m
+>> rand(Account.account_types.length)
+=> [0;36m3[0;0m
+>> rand(Account.account_types.length)[C[K[C[C[1PAccount.account_types.length[C[C[C[C[C[C[C[1PAccount.account_types.length[C[C[C[C[C[C[1PAccount.account_types.length[C[C[C[C[C[1PAccount.account_types.length[C[C[C[C[1PAccount.account_types.length[C[C[C
+=> [0;36m6[0;0m
+>> Account.account_types.length[C[C[Crand(Account.account_types.length)[C[C[C[10PAccount.account_types[0][1P[0]s[0][1P]6]
+=> [0;32mnil[0;0m
+>> Account.account_types[6][1P]5]
+=> [0;31m"[0;0m[0;36mProvider[0;0m[0;31m"[0;0m
+>> Fakker[K[K[Ker::Interner.domain_name
+NameError: uninitialized constant Faker::Interner
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:440:in `load_missing_constant'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+	from (irb):30
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> f = Factory-[K.create :account
+=> #<Account id: 287, name: "Hermiston-Macejkovic", description: nil, created_at: "2010-11-26 08:27:03", updated_at: "2010-11-26 08:27:03", account_type: "Prospect", industry_type: "Insurance", website: nil>
+>> f = Factory.create :account[C[C[CFaker::Interner.domain_name[C[C[Cf = Factory.create :account[C[C[C[Kquit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> f = Factory.create :account
+=> #<Account id: 288, name: "Stracke-Erdman", description: "Profound mobile info-mediaries", created_at: "2010-11-26 08:27:32", updated_at: "2010-11-26 08:27:32", account_type: "Prospect", industry_type: "Other", website: "borer.ca">
+>> f = Factory.create :account
+=> #<Account id: 289, name: "Beier Inc", description: "Future-proofed contextually-based time-frame", created_at: "2010-11-26 08:27:41", updated_at: "2010-11-26 08:27:41", account_type: "Provider", industry_type: "Recreation", website: "konopelski.ca">
+>> f = Factory.create :account
+=> #<Account id: 290, name: "Oberbrunner-Connelly", description: "Inverse value-added encryption", created_at: "2010-11-26 08:27:43", updated_at: "2010-11-26 08:27:43", account_type: "Other", industry_type: "Banking", website: "collier.com">
+>> f = Factory.create :account
+=> #<Account id: 291, name: "Kunze LLC", description: "Total secondary secured line", created_at: "2010-11-26 08:27:45", updated_at: "2010-11-26 08:27:45", account_type: "Competitor", industry_type: "Retail", website: "abernathyswaniawski.uk">
+>> f = Factory.create :account
+=> #<Account id: 292, name: "Cormier-Romaguera", description: "Face to face high-level standardization", created_at: "2010-11-26 08:27:48", updated_at: "2010-11-26 08:27:48", account_type: "Customer", industry_type: "Not For Profit", website: "jast.info">
+>> f = Factory.create :account
+=> #<Account id: 293, name: "Kling-Mayert", description: "Persevering holistic moratorium", created_at: "2010-11-26 08:27:50", updated_at: "2010-11-26 08:27:50", account_type: "Partner", industry_type: "Energy", website: "wisoky.com">
+>> f = Factory.create :account
+=> #<Account id: 294, name: "Moen Inc", description: "Function-based value-added archive", created_at: "2010-11-26 08:27:52", updated_at: "2010-11-26 08:27:52", account_type: "Competitor", industry_type: "Consulting", website: "keelinglabadie.uk">
+>> f = Factory.create :account
+=> #<Account id: 295, name: "Mohr Group", description: "Object-based static paradigm", created_at: "2010-11-26 08:27:55", updated_at: "2010-11-26 08:27:55", account_type: "Prospect", industry_type: "Technology", website: "halvorsonkuhic.biz">
+>> f = Factory.create :account
+=> #<Account id: 296, name: "Reinger-Bashirian", description: "Profit-focused responsive neural-net", created_at: "2010-11-26 08:27:56", updated_at: "2010-11-26 08:27:56", account_type: "Prospect", industry_type: "Finance", website: "walsh.biz">
+>> f = Factory.create :account
+=> #<Account id: 297, name: "Quigley, Jaskolski and Kirlin", description: "Triple-buffered heuristic budgetary management", created_at: "2010-11-26 08:27:58", updated_at: "2010-11-26 08:27:58", account_type: "Competitor", industry_type: "Healthcare", website: "lebsack.com">
+>> f = Factory.create :account
+=> #<Account id: 298, name: "Beer, Reynolds and Beer", description: "Balanced non-volatile portal", created_at: "2010-11-26 08:28:02", updated_at: "2010-11-26 08:28:02", account_type: "Provider", industry_type: "Healthcare", website: "anderson.info">
+>> f = Factory.create :account
+=> #<Account id: 299, name: "Hudson, Runolfsdottir and Balistreri", description: "Vision-oriented intangible analyzer", created_at: "2010-11-26 08:28:04", updated_at: "2010-11-26 08:28:04", account_type: "Customer", industry_type: "Retail", website: "langworthrice.com">
+>> f = Factory.create :account
+=> #<Account id: 300, name: "Boehm-Kshlerin", description: "Organized transitional moratorium", created_at: "2010-11-26 08:28:07", updated_at: "2010-11-26 08:28:07", account_type: "Prospect", industry_type: "Insurance", website: "cremincremin.us">
+>> f = Factory.create :account
+=> #<Account id: 301, name: "Aufderhar, Ritchie and Keebler", description: "Extended asynchronous hierarchy", created_at: "2010-11-26 08:28:09", updated_at: "2010-11-26 08:28:09", account_type: "Customer", industry_type: "Transportation", website: "metz.us">
+>> f = Factory.create :account
+=> #<Account id: 302, name: "Herzog-Thiel", description: "Synergistic impactful hub", created_at: "2010-11-26 08:28:10", updated_at: "2010-11-26 08:28:10", account_type: "Partner", industry_type: "Hospitality", website: "wymanbayer.name">
+>> f = Factory.create :account
+=> #<Account id: 303, name: "Rutherford, Feest and Jakubowski", description: "Re-contextualized mobile protocol", created_at: "2010-11-26 08:28:10", updated_at: "2010-11-26 08:28:10", account_type: "Prospect", industry_type: "Telecommunications", website: "hessel.info">
+>> f = Factory.create :account
+=> #<Account id: 304, name: "O'Reilly, Pacocha and Kemmer", description: "Face to face tangible throughput", created_at: "2010-11-26 08:28:11", updated_at: "2010-11-26 08:28:11", account_type: "Competitor", industry_type: "Recreation", website: "reingerflatley.com">
+>> f = Factory.create :account
+=> #<Account id: 305, name: "Walter-Harvey", description: "Decentralized neutral collaboration", created_at: "2010-11-26 08:28:12", updated_at: "2010-11-26 08:28:12", account_type: "Partner", industry_type: "Insurance", website: "hahnkunze.uk">
+>> f = Factory.create :account
+=> #<Account id: 306, name: "Smitham-Stoltenberg", description: "Automated radical website", created_at: "2010-11-26 08:28:14", updated_at: "2010-11-26 08:28:14", account_type: "Customer", industry_type: "Consulting", website: "wilderman.name">
+>> f = Factory.create :account
+=> #<Account id: 307, name: "Hodkiewicz-Champlin", description: "Distributed 24 hour benchmark", created_at: "2010-11-26 08:28:16", updated_at: "2010-11-26 08:28:16", account_type: "Partner", industry_type: "Banking", website: "white.biz">
+>> f = Factory.create :account
+=> #<Account id: 308, name: "Thompson, Grady and Morar", description: "Re-contextualized logistical process improvement", created_at: "2010-11-26 08:28:18", updated_at: "2010-11-26 08:28:18", account_type: "Competitor", industry_type: "Entertainment", website: "erdmanvolkman.us">
+>> f = Factory.create :account
+=> #<Account id: 309, name: "Kilback Inc", description: "Object-based responsive installation", created_at: "2010-11-26 08:28:20", updated_at: "2010-11-26 08:28:20", account_type: "Partner", industry_type: "Finance", website: "sporerkshlerin.co.uk">
+>> f = Factory.create :account
+=> #<Account id: 310, name: "Fay Group", description: "Reduced analyzing groupware", created_at: "2010-11-26 08:28:25", updated_at: "2010-11-26 08:28:25", account_type: "Customer", industry_type: "Hospitality", website: "toy.us">
+>> f = Factory.create :account
+=> #<Account id: 311, name: "Lebsack LLC", description: "Balanced multi-state encoding", created_at: "2010-11-26 08:28:26", updated_at: "2010-11-26 08:28:26", account_type: "Partner", industry_type: "Utilities", website: "abernathy.uk">
+>> f = Factory.create :account
+=> #<Account id: 312, name: "Schaefer LLC", description: "Future-proofed heuristic installation", created_at: "2010-11-26 08:28:27", updated_at: "2010-11-26 08:28:27", account_type: "Partner", industry_type: "Banking", website: "kuhnhuels.co.uk">
+>> f = Factory.create :account
+=> #<Account id: 313, name: "Rau, Balistreri and Price", description: "Profit-focused contextually-based circuit", created_at: "2010-11-26 08:28:28", updated_at: "2010-11-26 08:28:28", account_type: "Other", industry_type: "Consulting", website: "williamson.biz">
+>> f = Factory.create :account
+=> #<Account id: 314, name: "Lubowitz-Watsica", description: "Visionary intermediate paradigm", created_at: "2010-11-26 08:28:28", updated_at: "2010-11-26 08:28:28", account_type: "Customer", industry_type: "Hospitality", website: "ziemecormier.info">
+>> f = Factory.create :account
+=> #<Account id: 315, name: "Schroeder-Morissette", description: "Cross-platform bi-directional contingency", created_at: "2010-11-26 08:28:29", updated_at: "2010-11-26 08:28:29", account_type: "Other", industry_type: "Entertainment", website: "hartmann.biz">
+>> f = Factory.create :account
+=> #<Account id: 316, name: "Nicolas Inc", description: "Optional tangible utilisation", created_at: "2010-11-26 08:28:30", updated_at: "2010-11-26 08:28:30", account_type: "Competitor", industry_type: "Healthcare", website: "schroeder.ca">
+>> f = Factory.create :account
+=> #<Account id: 317, name: "Bogisich, Hills and Daugherty", description: "Decentralized next generation superstructure", created_at: "2010-11-26 08:28:31", updated_at: "2010-11-26 08:28:31", account_type: "Customer", industry_type: "Hospitality", website: "boyer.com">
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ quit
+No se ha encontrado la orden «quit», quizás quiso decir:
+ La orden «quilt» del paquete «quilt» (main)
+ La orden «luit» del paquete «x11-utils» (main)
+ La orden «quot» del paquete «quota» (main)
+ La orden «quiz» del paquete «bsdgames» (universe)
+ La orden «qgit» del paquete «qgit» (universe)
+ La orden «qwit» del paquete «qwit» (universe)
+quit: orden no encontrada
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ quitscript/console
+Loading development environment (Rails 2.3.8)
+^[[A^[[B>> f = Factory.create :account[C[C[C[K
+?> 
+?> 
+?> f = Factory.create :account[C[C[CFaker::Interner.domain_name[C[C[Cf = Factory.create :account[K[K[K[K[K[K[Kcontact
+=> #<Contact id: 435, name: "Jamar", description: "Adaptive web-enabled definition", created_at: "2010-11-26 08:35:57", updated_at: "2010-11-26 08:35:57", sur_name: "Schmidt", lead_source: "Partner", title: "Versatile human-resource local area network", department: "and Sons", account_id: nil, seat_id: nil, contact_means: {}>
+>> f = Factory.create :contactaccount[C[C[CFaker::Interner.domain_name[C[C[Cf = Factory.create :account[K[K[K[K[K[K[Kseat
+ArgumentError: No such factory: seat
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:327:in `factory_by_name'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):5
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/consolequit[Kscript/console
+Loading development environment (Rails 2.3.8)
+>> f = Factory.create :seat
+ActiveRecord::RecordInvalid: Validation failed: Name can't be blank
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/create.rb:6:in `result'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:323:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):1
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> f = Factory.create :seat
+=> #<Seat id: 514, created_at: "2010-11-26 08:41:06", updated_at: "2010-11-26 08:41:06", street: "Mertz Grove", city: nil, state: nil, postalcode: nil, country: nil, account_id: nil, name: "Lake Caterinaport", contact_means: {}>
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> c[Kc = Factory.create :contact
+NoMethodError: undefined method `account=' for #<Contact:0xb6dbeb90>
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:259:in `method_missing'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `send'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `set'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):1
+>> c = Factory.create :contact[K[K[K[K[K[K[Kseat
+=> #<Seat id: 517, created_at: "2010-11-26 08:50:35", updated_at: "2010-11-26 08:50:35", street: "Regan Cape", city: "Port Ansleybury", state: "South Carolina", postalcode: "89978-0941", country: "Northern Ireland", account_id: 319, name: "Keelingland", contact_means: {"Teléfono Oficina"=>"1-835-851-8612"}>
+>> c.seat[K[K[K[Kaccount.name
+=> [0;31m"[0;0m[0;36mJohnston-Effertz[0;0m[0;31m"[0;0m
+>> c.account.name[K[K[K[K[K
+=> #<Account id: 319, name: "Johnston-Effertz", description: "unleash innovative bandwidth", created_at: "2010-11-26 08:50:34", updated_at: "2010-11-26 08:50:34", account_type: "Prospect", industry_type: "Consulting", website: "quigleyeffertz.biz">
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> c.account.name[C[C[C[C = Factory.create :seat[K[K[K[Kcontact
+=> [1;31m#<[0;0m[1;37mContact id[0;0m[0;34m:[0;0m 436, name: "Antwon", description: "Expanded hybrid system engine", created_at: "2010-11-26 08:52:05", updated_at: "2010-11-26 08:52:05", sur_name: "Rippin", lead_source: "Partner", title: "Implemented tertiary product", department: ["quis"], account_id: nil, seat_id: 519, contact_means: {"Teléfono"="846-515-5627", "Email"="hickle_jordyn[0;34m@[0;0mpredovichackett.name"}[1;31m>[0;0m
+>> c.seat
+=> #<Seat id: 519, created_at: "2010-11-26 08:52:05", updated_at: "2010-11-26 08:52:05", street: "Runolfsdottir Hollow", city: "East Casperport", state: "Indiana", postalcode: "52741-6610", country: "Wales", account_id: 320, name: "Port Hopeborough", contact_means: {"Teléfono Oficina"=>"1-781-223-9488"}>
+>> c.seat.account
+=> #<Account id: 320, name: "Yost-Fritsch", description: "scale killer partnerships", created_at: "2010-11-26 08:52:05", updated_at: "2010-11-26 08:52:05", account_type: "Prospect", industry_type: "Hospitality", website: "hayes.uk">
+>> c.seat.account[K = Factory.create :contact
+=> [1;31m#<[0;0m[1;37mContact id[0;0m[0;34m:[0;0m 437, name: "Nolan", description: "Balanced impactful instruction set", created_at: "2010-11-26 08:52:26", updated_at: "2010-11-26 08:52:26", sur_name: "Larson", lead_source: "Cold Call", title: "Horizontal neutral adapter", department: ["rerum"], account_id: nil, seat_id: 521, contact_means: {"Teléfono"="836.948.0494 x31277", "Email"="grant.emiliano[0;34m@[0;0mlynch.name"}[1;31m>[0;0m
+>> c.contact_mean[Kns
+=> [0;32m{[0;0m[0;31m"[0;0m[0;36mTeléfono[0;0m[0;31m"[0;0m[0;34m=>[0;0m[0;31m"[0;0m[0;36m836.948.0494 x31277[0;0m[0;31m"[0;0m[0;34m,[0;0m [0;31m"[0;0m[0;36mEmail[0;0m[0;31m"[0;0m[0;34m=>[0;0m[0;31m"[0;0m[0;36mgrant.emiliano@lynch.name[0;0m[0;31m"[0;0m[0;32m}[0;0m
+>> c.contact_means[C[C[C[C = Factory.create :contact
+=> [1;31m#<[0;0m[1;37mContact id[0;0m[0;34m:[0;0m 438, name: "Ofelia", description: "Managed responsive definition", created_at: "2010-11-26 08:53:24", updated_at: "2010-11-26 08:53:24", sur_name: "Mosciski", lead_source: "Cold Call", title: "Front-line object-oriented standardization", department: ["nisi"], account_id: nil, seat_id: 523, contact_means: {"Teléfono"="(072)384-5200 x0495", "Email"="odell_simonis[0;34m@[0;0mpagacledner.info"}[1;31m>[0;0m
+>> c = Factory.create :contact[C[C[C[C[12P.contact_means
+=> [0;32m{[0;0m[0;31m"[0;0m[0;36mTeléfono[0;0m[0;31m"[0;0m[0;34m=>[0;0m[0;31m"[0;0m[0;36m(072)384-5200 x0495[0;0m[0;31m"[0;0m[0;34m,[0;0m [0;31m"[0;0m[0;36mEmail[0;0m[0;31m"[0;0m[0;34m=>[0;0m[0;31m"[0;0m[0;36modell_simonis@pagacledner.info[0;0m[0;31m"[0;0m[0;32m}[0;0m
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> r = Factory.create :resource
+=> #<Resource id: 19, created_at: "2010-11-26 08:57:22", updated_at: "2010-11-26 08:57:22", name: "reichert", url: "windler.name">
+>> r = Factory.create :resource
+=> #<Resource id: 20, created_at: "2010-11-26 08:57:26", updated_at: "2010-11-26 08:57:26", name: "rohan", url: "greenholtpadberg.co.uk">
+>> r = Factory.create :resource
+=> #<Resource id: 21, created_at: "2010-11-26 08:57:30", updated_at: "2010-11-26 08:57:30", name: "glover", url: "lesch.us">
+>> r = Factory.create :resource
+=> #<Resource id: 22, created_at: "2010-11-26 08:57:31", updated_at: "2010-11-26 08:57:31", name: "farrell", url: "christiansen.biz">
+>> r = Factory.create :resource
+=> #<Resource id: 23, created_at: "2010-11-26 08:57:33", updated_at: "2010-11-26 08:57:33", name: "lowe", url: "toy.com">
+>> r = Factory.create :resource
+=> #<Resource id: 24, created_at: "2010-11-26 08:57:33", updated_at: "2010-11-26 08:57:33", name: "hermiston", url: "abshire.ca">
+>> r = Factory.create :resource
+=> #<Resource id: 25, created_at: "2010-11-26 08:57:34", updated_at: "2010-11-26 08:57:34", name: "gibson", url: "durganrippin.uk">
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> r = Factory.create :resource
+=> #<Resource id: 26, created_at: "2010-11-26 08:57:52", updated_at: "2010-11-26 08:57:52", name: "enhance sticky action-items", url: "tromphansen.us">
+>> Random.date
+NameError: uninitialized constant Random
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:443:in `load_missing_constant'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+	from (irb):2
+>> 2.days.ago
+=> [1;32mWed[0;0m[0;34m,[0;0m [0;36m24[0;0m [1;32mNov[0;0m [0;36m2010[0;0m [0;36m09[0;0m[1;33m:[0;0m[1;33m29[0;0m[1;33m:[0;0m[1;33m15[0;0m [1;32mUTC[0;0m [0;36m00[0;0m[1;33m:[0;0m[1;33m00[0;0m
+>> rand()5)0)0)[C.days.ago
+=> [1;32mTue[0;0m[0;34m,[0;0m [0;36m01[0;0m [1;32mSep[0;0m [0;36m2009[0;0m [0;36m09[0;0m[1;33m:[0;0m[1;33m29[0;0m[1;33m:[0;0m[1;33m49[0;0m [1;32mUTC[0;0m [0;36m00[0;0m[1;33m:[0;0m[1;33m00[0;0m
+>> rand(500).days.ago
+=> [1;32mWed[0;0m[0;34m,[0;0m [0;36m07[0;0m [1;32mJul[0;0m [0;36m2010[0;0m [0;36m09[0;0m[1;33m:[0;0m[1;33m29[0;0m[1;33m:[0;0m[1;33m50[0;0m [1;32mUTC[0;0m [0;36m00[0;0m[1;33m:[0;0m[1;33m00[0;0m
+>> rand(500).days.ago
+=> [1;32mTue[0;0m[0;34m,[0;0m [0;36m01[0;0m [1;32mDec[0;0m [0;36m2009[0;0m [0;36m09[0;0m[1;33m:[0;0m[1;33m29[0;0m[1;33m:[0;0m[1;33m51[0;0m [1;32mUTC[0;0m [0;36m00[0;0m[1;33m:[0;0m[1;33m00[0;0m
+>> rand(500).days.ago
+=> [1;32mMon[0;0m[0;34m,[0;0m [0;36m31[0;0m [1;32mMay[0;0m [0;36m2010[0;0m [0;36m09[0;0m[1;33m:[0;0m[1;33m29[0;0m[1;33m:[0;0m[1;33m56[0;0m [1;32mUTC[0;0m [0;36m00[0;0m[1;33m:[0;0m[1;33m00[0;0m
+>> rand(500).days.ago
+=> [1;32mMon[0;0m[0;34m,[0;0m [0;36m19[0;0m [1;32mJul[0;0m [0;36m2010[0;0m [0;36m09[0;0m[1;33m:[0;0m[1;33m29[0;0m[1;33m:[0;0m[1;33m57[0;0m [1;32mUTC[0;0m [0;36m00[0;0m[1;33m:[0;0m[1;33m00[0;0m
+>> rand(500).days.ago
+=> [1;32mSat[0;0m[0;34m,[0;0m [0;36m26[0;0m [1;32mDec[0;0m [0;36m2009[0;0m [0;36m09[0;0m[1;33m:[0;0m[1;33m29[0;0m[1;33m:[0;0m[1;33m59[0;0m [1;32mUTC[0;0m [0;36m00[0;0m[1;33m:[0;0m[1;33m00[0;0m
+>> rand(500).days.ago
+=> [1;32mMon[0;0m[0;34m,[0;0m [0;36m17[0;0m [1;32mMay[0;0m [0;36m2010[0;0m [0;36m09[0;0m[1;33m:[0;0m[1;33m30[0;0m[1;33m:[0;0m[1;33m00[0;0m [1;32mUTC[0;0m [0;36m00[0;0m[1;33m:[0;0m[1;33m00[0;0m
+>> rand(500).days.ago
+=> [1;32mWed[0;0m[0;34m,[0;0m [0;36m01[0;0m [1;32mSep[0;0m [0;36m2010[0;0m [0;36m09[0;0m[1;33m:[0;0m[1;33m30[0;0m[1;33m:[0;0m[1;33m02[0;0m [1;32mUTC[0;0m [0;36m00[0;0m[1;33m:[0;0m[1;33m00[0;0m
+>> rand(500).days.ago
+=> [1;32mFri[0;0m[0;34m,[0;0m [0;36m09[0;0m [1;32mJul[0;0m [0;36m2010[0;0m [0;36m09[0;0m[1;33m:[0;0m[1;33m30[0;0m[1;33m:[0;0m[1;33m04[0;0m [1;32mUTC[0;0m [0;36m00[0;0m[1;33m:[0;0m[1;33m00[0;0m
+>> rand(500).days.ago
+=> [1;32mSat[0;0m[0;34m,[0;0m [0;36m20[0;0m [1;32mMar[0;0m [0;36m2010[0;0m [0;36m09[0;0m[1;33m:[0;0m[1;33m30[0;0m[1;33m:[0;0m[1;33m04[0;0m [1;32mUTC[0;0m [0;36m00[0;0m[1;33m:[0;0m[1;33m00[0;0m
+>> rand(500).days.ago
+=> [1;32mSun[0;0m[0;34m,[0;0m [0;36m27[0;0m [1;32mJun[0;0m [0;36m2010[0;0m [0;36m09[0;0m[1;33m:[0;0m[1;33m30[0;0m[1;33m:[0;0m[1;33m04[0;0m [1;32mUTC[0;0m [0;36m00[0;0m[1;33m:[0;0m[1;33m00[0;0m
+>> rand(500).days.ago
+=> [1;32mMon[0;0m[0;34m,[0;0m [0;36m21[0;0m [1;32mSep[0;0m [0;36m2009[0;0m [0;36m09[0;0m[1;33m:[0;0m[1;33m30[0;0m[1;33m:[0;0m[1;33m05[0;0m [1;32mUTC[0;0m [0;36m00[0;0m[1;33m:[0;0m[1;33m00[0;0m
+>> rand(500).days.ago
+=> [1;32mWed[0;0m[0;34m,[0;0m [0;36m21[0;0m [1;32mApr[0;0m [0;36m2010[0;0m [0;36m09[0;0m[1;33m:[0;0m[1;33m30[0;0m[1;33m:[0;0m[1;33m05[0;0m [1;32mUTC[0;0m [0;36m00[0;0m[1;33m:[0;0m[1;33m00[0;0m
+>> rand(500).days.ago
+=> [1;32mThu[0;0m[0;34m,[0;0m [0;36m02[0;0m [1;32mSep[0;0m [0;36m2010[0;0m [0;36m09[0;0m[1;33m:[0;0m[1;33m30[0;0m[1;33m:[0;0m[1;33m05[0;0m [1;32mUTC[0;0m [0;36m00[0;0m[1;33m:[0;0m[1;33m00[0;0m
+>> rand(500).days.ago
+=> [1;32mSat[0;0m[0;34m,[0;0m [0;36m21[0;0m [1;32mAug[0;0m [0;36m2010[0;0m [0;36m09[0;0m[1;33m:[0;0m[1;33m30[0;0m[1;33m:[0;0m[1;33m05[0;0m [1;32mUTC[0;0m [0;36m00[0;0m[1;33m:[0;0m[1;33m00[0;0m
+>> rand(500).days.ago
+=> [1;32mFri[0;0m[0;34m,[0;0m [0;36m21[0;0m [1;32mMay[0;0m [0;36m2010[0;0m [0;36m09[0;0m[1;33m:[0;0m[1;33m30[0;0m[1;33m:[0;0m[1;33m06[0;0m [1;32mUTC[0;0m [0;36m00[0;0m[1;33m:[0;0m[1;33m00[0;0m
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+o >> o = fac[K[K[KFactory.create :offer
+NoMethodError: undefined method `cod' for #<Object:0xb7798954>
+	from /home/david/projects/Intranet/spec/factories.rb:53
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:11:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:11:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):1
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> o = Factory.create :offer
+/home/david/projects/Intranet/spec/factories.rb:53: warning: Object#id will be deprecated; use Object#object_id
+ActiveRecord::RecordInvalid: Validation failed: Name is not included in the list
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/create.rb:6:in `result'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:323:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):1>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> o = Factory.create :offer
+ActiveRecord::RecordInvalid: Validation failed: Name is not included in the list
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/create.rb:6:in `result'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:323:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):1>> o = Factory.create :offer[C[C[C[7Prand(500).days.ago[C[C[C[8P2.days.ago[C[C[Crand(500).days.ago[C[C[Co = Factory.create :offer[C[C[C[Kquit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> o = Factory.create :offer
+/home/david/projects/Intranet/spec/factories.rb:53: warning: Object#id will be deprecated; use Object#object_id
+ActiveRecord::RecordInvalid: Validation failed: Name is not included in the list
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/create.rb:6:in `result'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:323:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):1>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console[Kscript/consolequit[Kscript/console
+Loading development environment (Rails 2.3.8)
+>> o = Factory.create :offer[K[K[K[K[Koffer_type
+ActiveRecord::RecordInvalid: Validation failed: Name is not included in the list
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/create.rb:6:in `result'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:323:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):1
+>> o = Factory.create :offer_type
+ActiveRecord::RecordInvalid: Validation failed: Name is not included in the list
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/create.rb:6:in `result'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:323:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):2
+>> qy[Kuit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ 
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> o = Factory.create :offer_type[K_type
+NameError: uninitialized constant OfferTypes
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:443:in `load_missing_constant'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+	from /home/david/projects/Intranet/spec/factories.rb:38
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:11:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:11:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):1
+>> reload!
+Reloading...
+=> [0;32mtrue[0;0m
+>> reload![C[C[Co = Factory.create :offer_type
+NameError: uninitialized constant OfferTypes
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:443:in `load_missing_constant'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+	from /home/david/projects/Intranet/spec/factories.rb:38
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:11:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:11:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):3
+>> OfferTypes.[K[K.Off[K[K[K[K[K[K[K[K[K[K[K[K[Kreload!
+Reloading...
+=> [0;32mtrue[0;0m
+>> reload![C[C[Co = Factory.create :offer_type
+NameError: uninitialized constant OfferTypes
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:443:in `load_missing_constant'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+	from /home/david/projects/Intranet/spec/factories.rb:38
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:11:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:11:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):5
+>> OfferType.offer_tye[Kpes
+=> [0;32m[[0;0m[0;31m"[0;0m[0;36mOferta MV WebTrends[0;0m[0;31m"[0;0m[0;34m,[0;0m [0;31m"[0;0m[0;36mOferta MV Google Analytics[0;0m[0;31m"[0;0m[0;34m,[0;0m [0;31m"[0;0m[0;36mOferta MV otros productos/servicios[0;0m[0;31m"[0;0m[0;34m,[0;0m [0;31m"[0;0m[0;36mOferta Pixel8 SiteCatalyst[0;0m[0;31m"[0;0m[0;34m,[0;0m [0;31m"[0;0m[0;36mOferta Pixel8 otros productos/servicios[0;0m[0;31m"[0;0m[0;32m][0;0m
+>> OfferType.offer_types[]0]
+=> [0;31m"[0;0m[0;36mOferta MV WebTrends[0;0m[0;31m"[0;0m
+>> OfferType.offer_types[0][1P]1]
+=> [0;31m"[0;0m[0;36mOferta MV Google Analytics[0;0m[0;31m"[0;0m
+>> reload!
+Reloading...
+=> [0;32mtrue[0;0m
+>> reload![C[C[COfferType.offer_types[1]0][K[C[C[Co = Factory.create :offer_type
+NameError: uninitialized constant OfferTypes
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:443:in `load_missing_constant'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:80:in `const_missing'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:92:in `const_missing'
+	from /home/david/projects/Intranet/spec/factories.rb:38
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:11:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:11:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):10
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> OfferType.offer_types[1]0][K[C[C[C[14Preload![C[C[Co = Factory.create :offer_type
+=> #<OfferType id: 6, name: "Oferta Pixel8 otros productos/servicios", created_at: "2010-11-26 09:46:34", updated_at: "2010-11-26 09:46:34">
+>> o = Factory.create :offer_type[K[K[K[K[K
+/home/david/projects/Intranet/spec/factories.rb:53: warning: Object#id will be deprecated; use Object#object_id
+NoMethodError: undefined method `cod' for #<Object:0xb770f94c>
+	from /home/david/projects/Intranet/spec/factories.rb:46
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:11:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:11:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):2
+>> o = Factory.create :offer_type[K[C[C[C[Kquit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> OfferType.offer_types[1]0][K[C[C[C[14Preload![C[C[Co = Factory.create :offer_type[K
+/home/david/projects/Intranet/spec/factories.rb:53: warning: Object#id will be deprecated; use Object#object_id
+Factory::AttributeDefinitionError: Attribute already defined: cod
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:122:in `add_attribute'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:143:in `method_missing'
+	from /home/david/projects/Intranet/spec/factories.rb:46
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:11:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:11:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):1
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> OfferType.offer_types[1]0][K[C[C[C[14Preload![C[C[Co = Factory.create :offer_type[K
+ActiveRecord::RecordInvalid: Validation failed: Name has already been taken
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/create.rb:6:in `result'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:323:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+... 286 levels...
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):1>> o = Factory.create :offer
+ActiveRecord::RecordInvalid: Validation failed: Name has already been taken
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/create.rb:6:in `result'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:323:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+... 850 levels...
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):2>> o = Factory.create :offer[C[C[C[1POfferType.offer_types[1]0][K[C[C[C[14Preload![C[C[Co = Factory.create :offer_type[C[C[Creload![K
+Reloading...
+=> [0;32mtrue[0;0m
+>> reload![C[C[Co = Factory.create :offer
+NoMethodError: You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.include?
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:142:in `create_time_zone_conversion_attribute?'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:75:in `define_attribute_methods'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:71:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:71:in `define_attribute_methods'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:246:in `method_missing'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `send'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `set'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):4
+>> o = Factory.create :offer[C[C[Creload![K
+Reloading...
+=> [0;32mtrue[0;0m
+>> reload![C[C[Co = Factory.create :offer
+NoMethodError: You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.include?
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:142:in `create_time_zone_conversion_attribute?'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:75:in `define_attribute_methods'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:71:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:71:in `define_attribute_methods'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:246:in `method_missing'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `send'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `set'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):6
+>> o = Factory.create :offer[C[C[Creload![K
+Reloading...
+=> [0;32mtrue[0;0m
+>> reload![C[C[Co = Factory.create :offer
+NoMethodError: You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.include?
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:142:in `create_time_zone_conversion_attribute?'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:75:in `define_attribute_methods'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:71:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:71:in `define_attribute_methods'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:246:in `method_missing'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `send'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `set'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):8
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/consolequit[Kscript/console
+Loading development environment (Rails 2.3.8)
+^[[A>> OfferType.offer_types[1][C[C[C[KOfferType.offer_types[1]0][K[C[C[C[14Preload![C[C[Co = Factory.create :offer_type[K
+ActiveRecord::RecordInvalid: Validation failed: Commercial can't be blank, Creation day can't be blank, Offer type can't be blank, Account can't be blank, Commercial does not exist, Offer type does not exist, Account does not exist
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/create.rb:6:in `result'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:323:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):1
+>> rand()2)5)[C.months
+=> [0;36m7[0;0m [0;32mmonths[0;0m
+>> rand(25).monthsDrand(25).months[C[C[C[Carand(25).months[C[C[C[C[Ctrand(25).months[C[C[C[C[C[Cerand(25).months[C[C[C[C[C[C[C,rand(25).months[C[C[C[C[C[C[C[C[1Prand(25).months[C[C[C[C[C[C[C.rand(25).months[C[C[C[C[C[C[C[Ctrand(25).months[C[C[C[C[C[C[C[C[Corand(25).months[C[C[C[C[C[C[C[C[C[Cdrand(25).months[C[C[C[C[C[C[C[C[C[C[Carand(25).months[C[C[C[C[C[C[C[C[C[C[C[Cyrand(25).months[C[C[C[C[C[C[C[C[C[C[C[C[C[1Prand(25).months[C[C[C[C[C[C[C[C[C[C[C[Cyrand(25).months[C[C[C[C[C[C[C[C[C[C[C[C[C-rand(25).months[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+=> [1;32mWed[0;0m[0;34m,[0;0m [0;36m26[0;0m [1;32mMay[0;0m [0;36m2010[0;0m
+>> Date.today-rand(25).months
+=> [1;32mMon[0;0m[0;34m,[0;0m [0;36m26[0;0m [1;32mApr[0;0m [0;36m2010[0;0m
+>> Date.today-rand(25).months
+=> [1;32mFri[0;0m[0;34m,[0;0m [0;36m26[0;0m [1;32mNov[0;0m [0;36m2010[0;0m
+>> Date.today-rand(25).months
+=> [1;32mMon[0;0m[0;34m,[0;0m [0;36m26[0;0m [1;32mJul[0;0m [0;36m2010[0;0m
+>> Date.today-rand(25).months[C[C[C[11Prand(25).months[C[C[Co = Factory.create :offer[C[C[C[1POfferType.offer_types[1]0][K[C[C[C[14Preload!
+Reloading...
+=> [0;32mtrue[0;0m
+>> reload![C[C[CDate.today-rand(25).months[C[K[K[K[K[K[Kdays[1P).days[1P).days1).days0).days0).days0).days
+=> [1;32mFri[0;0m[0;34m,[0;0m [0;36m23[0;0m [1;32mMay[0;0m [0;36m2008[0;0m
+>> Date.today-rand(1000).days
+=> [1;32mWed[0;0m[0;34m,[0;0m [0;36m18[0;0m [1;32mMar[0;0m [0;36m2009[0;0m
+>> Date.today-rand(1000).days
+=> [1;32mWed[0;0m[0;34m,[0;0m [0;36m03[0;0m [1;32mFeb[0;0m [0;36m2010[0;0m
+>> Date.today-rand(1000).days
+=> [1;32mSat[0;0m[0;34m,[0;0m [0;36m15[0;0m [1;32mAug[0;0m [0;36m2009[0;0m
+>> Date.today-rand(1000).days
+=> [1;32mThu[0;0m[0;34m,[0;0m [0;36m11[0;0m [1;32mSep[0;0m [0;36m2008[0;0m
+>> Date.today-rand(1000).days
+=> [1;32mMon[0;0m[0;34m,[0;0m [0;36m13[0;0m [1;32mJul[0;0m [0;36m2009[0;0m
+>> Date.today-rand(1000).days[C[C[Creload![K[C[C[CDate.today-rand(25).months[C[C[Creload![K
+Reloading...
+=> [0;32mtrue[0;0m
+>> reload![C[C[CDate.today-rand(1000).days[C[C[Creload![K[C[C[CDate.today-rand(25).months[C[C[C[11Prand(25).months[C[C[Co = Factory.create :offer
+NoMethodError: You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.include?
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:142:in `create_time_zone_conversion_attribute?'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:75:in `define_attribute_methods'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:71:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:71:in `define_attribute_methods'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:246:in `method_missing'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `send'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `set'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):15
+>> o = Factory.create :offer[C[C[Creload![K[C[C[Co = Factory.create :offer[C[C[Creload![K[C[C[CDate.today-rand(1000).days[C[C[Creload![K
+Reloading...
+=> [0;32mtrue[0;0m
+>> reload![C[C[Co = Factory.create :offer
+NoMethodError: You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.include?
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:142:in `create_time_zone_conversion_attribute?'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:75:in `define_attribute_methods'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:71:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:71:in `define_attribute_methods'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:246:in `method_missing'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `send'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `set'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):17
+>> o = Factory.create :offer[C[C[Creload![K
+Reloading...
+=> [0;32mtrue[0;0m
+>> reload![C[C[Co = Factory.create :offer
+NoMethodError: You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.include?
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:142:in `create_time_zone_conversion_attribute?'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:75:in `define_attribute_methods'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:71:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:71:in `define_attribute_methods'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:246:in `method_missing'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `send'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `set'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):19
+>> o = Factory.create :offer__tye[1Ptye[C[C[C[Kpe
+=> #<OfferType id: 106, name: "Oferta Pixel8 SiteCatalyst", created_at: "2010-11-26 09:59:32", updated_at: "2010-11-26 09:59:32">
+>> o = Factory.create :offer_type[K[K[K[K[K[K[K[K[K[Kversion
+NoMethodError: You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.include?
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:142:in `create_time_zone_conversion_attribute?'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:75:in `define_attribute_methods'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:71:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:71:in `define_attribute_methods'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:246:in `method_missing'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `send'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `set'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):21>> o = Factory.create :version
+NoMethodError: You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.include?
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:142:in `create_time_zone_conversion_attribute?'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:75:in `define_attribute_methods'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:71:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:71:in `define_attribute_methods'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:246:in `method_missing'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `send'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `set'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):22>> sc[K[Kquit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> o = Factory.create :version
+ActiveRecord::RecordInvalid: Validation failed: Commercial can't be blank, Creation day can't be blank, Commercial does not exist
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/create.rb:6:in `result'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:323:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):1>> o = Factory.create :version[K[K[K[K[K[K[Koffer
+ActiveRecord::RecordInvalid: Validation failed: Commercial can't be blank, Creation day can't be blank, Commercial does not exist
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/create.rb:6:in `result'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:323:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):2
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> o = Factory.create :version[K[K[K[K[K[K[Ky[Kuser
+ActiveRecord::RecordInvalid: Validation failed: Password confirmation can't be blank
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/create.rb:6:in `result'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:323:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):1
+>> reload!
+Reloading...
+=> [0;32mtrue[0;0m
+>> reload![C[C[Co = Factory.create :user
+NoMethodError: You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.include?
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:142:in `create_time_zone_conversion_attribute?'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:75:in `define_attribute_methods'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:71:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:71:in `define_attribute_methods'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:246:in `method_missing'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `send'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `set'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):3
+>> Faker::Internet.domain_word[C[C[C[3Po = Factory.create :user[C[C[Creload![K
+Reloading...
+=> [0;32mtrue[0;0m
+>> reload![C[C[Co = Factory.create :user
+NoMethodError: You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.include?
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:142:in `create_time_zone_conversion_attribute?'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:75:in `define_attribute_methods'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:71:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:71:in `define_attribute_methods'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:246:in `method_missing'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `send'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:13:in `set'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/dynamic.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):5
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> o = Factory.create :user
+ActiveRecord::RecordInvalid: Validation failed: Password is too short (minimum is 6 characters)
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/create.rb:6:in `result'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:323:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):1
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> o = Factory.create :user
+=> [1;31m#<[0;0m[1;37mUser id[0;0m[0;34m:[0;0m 43, crypted_password: "c5595ffd91b6be49e50cef26db5919ece6edec48", salt: "ed30fabef7404d8d2b844dff4b15b54e00b4a7af", remember_token: nil, remember_token_expires_at: nil, name: "juston considine", email: "winnifred[0;34m@[0;0mmitchell.us", administrator: false, created_at: "2010-11-26 10:06:38", updated_at: "2010-11-26 10:06:38", state: "active", key_timestamp: nil, permissions_crm: nil, permissions_license: nil, permissions_offer: nil, permissions_resource: nil[1;31m>[0;0m
+>> user.name
+NameError: undefined local variable or method `user' for #<Object:0xb77dd950>
+	from (irb):2
+>> o.name
+=> [0;31m"[0;0m[0;36mjuston considine[0;0m[0;31m"[0;0m
+>> o.name[K[K[K[Kemail
+=> [0;31m"[0;0m[0;36mwinnifred@mitchell.us[0;0m[0;31m"[0;0m
+>> o.email[K[K[K[K[Kpassa[Kword
+=> [0;31m"[0;0m[0;36mfucker[0;0m[0;31m"[0;0m
+>> o.password[K[K[K[K[K[K[K[Kaslt
+NoMethodError: undefined method `aslt' for #<User:0xb6dd6ccc>
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:264:in `method_missing'
+	from (irb):6
+>> o.aslt[1Pslt[Calt
+=> [0;31m"[0;0m[0;36med30fabef7404d8d2b844dff4b15b54e00b4a7af[0;0m[0;31m"[0;0m
+>> o.salt[K[K[K[K[K
+=> [1;31m#<[0;0m[1;37mUser id[0;0m[0;34m:[0;0m 43, crypted_password: "c5595ffd91b6be49e50cef26db5919ece6edec48", salt: "ed30fabef7404d8d2b844dff4b15b54e00b4a7af", remember_token: nil, remember_token_expires_at: nil, name: "juston considine", email: "winnifred[0;34m@[0;0mmitchell.us", administrator: false, created_at: "2010-11-26 10:06:38", updated_at: "2010-11-26 10:06:38", state: "active", key_timestamp: nil, permissions_crm: nil, permissions_license: nil, permissions_offer: nil, permissions_resource: nil[1;31m>[0;0m
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> o.saltasltpassword[C[C[C[C[C[3Pemail[1Pname[C[C[Cuser.name[C[C[Co = Factory.create :user[K[K[K[Kversi[K[K[K[K[Koffer
+ActiveRecord::RecordInvalid: Validation failed: Name has already been taken
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/create.rb:6:in `result'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:323:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+... 202 levels...
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):1>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> o.saltasltpassword[C[C[C[C[C[3Pemail[1Pname[C[C[Cuser.name[C[C[Co = Factory.create :user[K[K[K[Koffer
+ActiveRecord::RecordInvalid: Validation failed: Name has already been taken
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/create.rb:6:in `result'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:323:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+... 394 levels...
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):1>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console
+Loading development environment (Rails 2.3.8)
+>> o.saltasltpassword[C[C[C[C[C[3Pemail[1Pname[C[C[Cuser.name[C[C[Co = Factory.create :user[K[K[K[Koffer
+SystemStackError: stack level too deep
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/callbacks.rb:166:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/callbacks.rb:90:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/callbacks.rb:90:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/callbacks.rb:90:in `send'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/callbacks.rb:90:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/callbacks.rb:276:in `run_callbacks'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1110:in `valid_without_callbacks?'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/callbacks.rb:315:in `valid?'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1099:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+... 3666 levels...
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/proxy/build.rb:17:in `associate'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/attribute/association.rb:15:in `add_to'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:320:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `each'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:318:in `run'
+	from /usr/lib/ruby/gems/1.8/gems/factory_girl-1.2.4/lib/factory_girl/factory.rb:267:in `create'
+	from (irb):1>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ clear
+[H[2J]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ cd vendor/
+]0;david@fry: ~/projects/Intranet/vendordavid@fry:~/projects/Intranet/vendor$ cd plugins/
+]0;david@fry: ~/projects/Intranet/vendor/pluginsdavid@fry:~/projects/Intranet/vendor/plugins$ ñs
+ñs: orden no encontrada
+]0;david@fry: ~/projects/Intranet/vendor/pluginsdavid@fry:~/projects/Intranet/vendor/plugins$ ls
+[0m[01;34maasm[0m  [01;34macts_as_commentable[0m  [01;34mpaperclip[0m  [01;34mrestful_authentication[0m  [01;34mvalidates_existence[0m  [01;34mwill_paginate[0m
+[m]0;david@fry: ~/projects/Intranet/vendor/pluginsdavid@fry:~/projects/Intranet/vendor/plugins$ git clone https://github.com/ryanb/acts-as-list[C[1P://github.com/ryanb/acts-as-list[1P://github.com/ryanb/acts-as-list[1P://github.com/ryanb/acts-as-list[1P://github.com/ryanb/acts-as-list[1P://github.com/ryanb/acts-as-listg://github.com/ryanb/acts-as-listi://github.com/ryanb/acts-as-listt://github.com/ryanb/acts-as-list
+Initialized empty Git repository in /home/david/projects/Intranet/vendor/plugins/acts-as-list/.git/
+remote: Counting objects: 32, done.[K
+remote: Compressing objects:   7% (1/14)   [Kremote: Compressing objects:  14% (2/14)   [Kremote: Compressing objects:  21% (3/14)   [Kremote: Compressing objects:  28% (4/14)   [Kremote: Compressing objects:  35% (5/14)   [Kremote: Compressing objects:  42% (6/14)   [Kremote: Compressing objects:  50% (7/14)   [Kremote: Compressing objects:  57% (8/14)   [Kremote: Compressing objects:  64% (9/14)   [Kremote: Compressing objects:  71% (10/14)   [Kremote: Compressing objects:  78% (11/14)   [Kremote: Compressing objects:  85% (12/14)   [Kremote: Compressing objects:  92% (13/14)   [Kremote: Compressing objects: 100% (14/14)   [Kremote: Compressing objects: 100% (14/14), done.[K
+remote: Total 32 (delta 12), reused 32 (delta 12)[K
+Receiving objects:   3% (1/32)   Receiving objects:   6% (2/32)   Receiving objects:   9% (3/32)   Receiving objects:  12% (4/32)   Receiving objects:  15% (5/32)   Receiving objects:  18% (6/32)   Receiving objects:  21% (7/32)   Receiving objects:  25% (8/32)   Receiving objects:  28% (9/32)   Receiving objects:  31% (10/32)   Receiving objects:  34% (11/32)   Receiving objects:  37% (12/32)   Receiving objects:  40% (13/32)   Receiving objects:  43% (14/32)   Receiving objects:  46% (15/32)   Receiving objects:  50% (16/32)   Receiving objects:  53% (17/32)   Receiving objects:  56% (18/32)   Receiving objects:  59% (19/32)   Receiving objects:  62% (20/32)   Receiving objects:  65% (21/32)   Receiving objects:  68% (22/32)   Receiving objects:  71% (23/32)   Receiving objects:  75% (24/32)   Receiving objects:  78% (25/32)   Receiving objects:  81% (26/32)   Receiving objects:  84% (27/32)   Receiving objects:  87% (28/32)   Receiving objects:  90% (29/32)   Receiving objects:  93% (30/32)   Receiving objects:  96% (31/32)   Receiving objects: 100% (32/32)   Receiving objects: 100% (32/32), 7.83 KiB, done.
+Resolving deltas:   0% (0/12)   Resolving deltas:  33% (4/12)   Resolving deltas:  58% (7/12)   Resolving deltas:  83% (10/12)   Resolving deltas:  91% (11/12)   Resolving deltas: 100% (12/12)   Resolving deltas: 100% (12/12), done.
+]0;david@fry: ~/projects/Intranet/vendor/pluginsdavid@fry:~/projects/Intranet/vendor/plugins$ ls -al
+total 32
+drwxr-xr-x  8 david david 4096 2010-11-26 12:02 [0m[01;34m.[0m
+drwxr-xr-x  3 david david 4096 2010-10-20 10:35 [01;34m..[0m
+drwxr-xr-x  6 david david 4096 2010-11-19 13:54 [01;34maasm[0m
+drwxr-xr-x  6 david david 4096 2010-11-24 10:05 [01;34macts_as_commentable[0m
+drwxr-xr-x 10 david david 4096 2010-10-25 10:46 [01;34mpaperclip[0m
+drwxr-xr-x  8 david david 4096 2010-10-25 10:47 [01;34mrestful_authentication[0m
+drwxr-xr-x  4 david david 4096 2010-11-25 13:27 [01;34mvalidates_existence[0m
+drwxr-xr-x  6 david david 4096 2010-11-02 13:56 [01;34mwill_paginate[0m
+[m]0;david@fry: ~/projects/Intranet/vendor/pluginsdavid@fry:~/projects/Intranet/vendor/plugins$ cd ..
+]0;david@fry: ~/projects/Intranet/vendordavid@fry:~/projects/Intranet/vendor$ ls
+[0m[01;34mplugins[0m
+[m]0;david@fry: ~/projects/Intranet/vendordavid@fry:~/projects/Intranet/vendor$ cd ..
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ ls
+[0m[01;34mapp[0m      [01;34mconfig[0m  [01;34mdoc[0m      Gemfile.lock  [01;34mlog[0m                   [01;34mnbproject[0m  Rakefile  [01;34mscript[0m  [01;34mtest[0m  [01;34mtms[0m         [01;34mvendor[0m
+Capfile  [01;34mdb[0m      Gemfile  [01;34mlib[0m           [01;34mmigraciones_antiguas[0m  [01;34mpublic[0m     README    [01;34mspec[0m    [01;34mtmp[0m   typescript
+[m]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ vim Gemfile
+[?1049h[?1h=[1;15r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[15;1H"Gemfile" 16L, 255C[>c[1;1Hsource "http://rubygems.org"
+
+gem "rails", "= 2.3.8"
+gem "mysql"
+
+gem "wirble"
+
+gem "rspec", "< 2.0.0"
+gem "rspec-rails", "< 2.0.0"
+gem "factory_girl", "= 1.2.4"
+gem "faker"
+gem "ruby-debug"
+
+gem "capistrano"[15;151H1,1      Comienzo[1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[15;151H2,0-1[2;1H[?12l[?25h[?25l[15;151H3,1  [3;1H[?12l[?25h[?25l[15;151H4[4;1H[?12l[?25h[?25l[15;151H5,0-1[5;1H[?12l[?25h[?25l[15;151H6,1  [6;1H[?12l[?25h[?25l[15;151H7,0-1[7;1H[?12l[?25h[?25l[15;151H8,1  [8;1H[?12l[?25h[?25l[15;151H9[9;1H[?12l[?25h[?25l[15;151H10,1[10;1H[?12l[?25h[?25l[15;152H1[11;1H[?12l[?25h[?25l[15;152H2[12;1H[?12l[?25h[?25l[15;152H3,0-1[13;1H[?12l[?25h[?25l[15;152H4,1  [14;1H[?12l[?25h[?25l[1;14r[14;1H
+[1;15r[14;1H#gem "capistrano_colors"[15;1H[K[15;151H15,1[10C50%[14;1H[?12l[?25h[?25l[1;14r[14;1H
+[1;15r[14;1Hgem "capistrano-ext"[15;151H[K[15;151H16,1[8CFinal[14;1H[?12l[?25h[?25l[15;152H5[13;1H[?12l[?25h[?25l[15;152H4[12;1H[?12l[?25h[?25l[15;152H3,0-1[11;1H[?12l[?25h[?25l[15;152H2,1  [10;1H[?12l[?25h[?25l[15;152H1[9;1H[?12l[?25h[?25l[15;152H0[8;1H[?12l[?25h[?25l[15;151H9,1 [7;1H[?12l[?25h[?25l[15;151H10,1[8;1H[?12l[?25h[?25l[15;152H1[9;1H[?12l[?25h[?25l[15;152H2[10;1H[?12l[?25h[?25l[15;152H3,0-1[11;1H[?12l[?25h[?25l[15;152H4,1  [12;1H[?12l[?25h[?25l[15;152H5[13;1H[?12l[?25h[?25l[15;152H6[14;1H[?12l[?25h[?25l[15;154H2[14;2H[?12l[?25h[?25l[15;154H3[14;3H[?12l[?25h[?25l[15;154H4[14;4H[?12l[?25h[?25l[15;154H5[14;5H[?12l[?25h[?25l[15;154H6[14;6H[?12l[?25h[?25l[15;154H7[14;7H[?12l[?25h[?25l[15;154H8[14;8H[?12l[?25h[?25l[15;154H9[14;9H[?12l[?25h[?25l[15;154H10[14;10H[?12l[?25h[?25l[15;155H1[14;11H[?12l[?25h[?25l[15;155H2[14;12H[?12l[?25h[?25l[15;155H3[14;13H[?12l[?25h[?25l[15;155H4[14;14H[?12l[?25h[?25l[15;155H5[14;15H[?12l[?25h[?25l[15;155H6[14;16H[?12l[?25h[?25l[15;155H7[14;17H[?12l[?25h[?25l[15;155H8[14;18H[?12l[?25h[?25l[15;155H9[14;19H[?12l[?25h[?25l[15;154H20[14;20H[?12l[?25h[?25l
+[1m-- INSERTAR --[m[15;151H[K[15;151H16,20[7CFinal[14;20H[?12l[?25h[?25l[15;155H1[14;21H[?12l[?25h[?25l[1;14r[14;1H
+[1;15r[15;151H[K[15;151H17,1[8CFinal[14;1H[?12l[?25h[?25l[1;14r[14;1H
+[1;15r[15;151H[K[15;151H18,1[8CFinal[14;1H[?12l[?25h[?25lg[15;154H2[14;2H[?12l[?25h[?25lge[15;154H3[14;3H[?12l[?25h[?25lem[15;154H4[14;4H[?12l[?25h[?25l[15;154H5[14;5H[?12l[?25h[?25l "[15;154H6[14;6H[?12l[?25h[?25l""[15;154H7[14;7H[?12l[?25h[?25l[14;6H[K[15;154H6[14;6H[?12l[?25h[?25l[14;5H[K[15;154H5[14;5H[?12l[?25h[?25l[15;154H4[14;4H[?12l[?25h[?25l[14;3H[K[15;154H3[14;3H[?12l[?25h[?25l[14;2H[K[15;154H2[14;2H[?12l[?25h[?25l[14;1H[K[15;154H1[14;1H[?12l[?25h[?25l[1m[34m~                                                                                                                                                                       [m[15;152H7[13;1H[?12l[?25h[?25l[1m[34m~                                                                                                                                                                       [m[15;152H6,21[12;21H[?12l[?25h[15;1H[K[12;20H[?25l[15;151H16,20[7CFinal[12;20H[?12l[?25h[?25l[15;151H[K[15;1H:[?12l[?25hq[?25l[?12l[?25h![?25l[?12l[?25h[?25l[15;1H[K[15;1H[?1l>[?12l[?25h[?1049l]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/plugin install git://github.com/rails/acts_as_list.git
+Initialized empty Git repository in /home/david/projects/Intranet/vendor/plugins/acts_as_list/.git/
+remote: Counting objects: 13, done.[K
+remote: Compressing objects:  11% (1/9)   [Kremote: Compressing objects:  22% (2/9)   [Kremote: Compressing objects:  33% (3/9)   [Kremote: Compressing objects:  44% (4/9)   [Kremote: Compressing objects:  55% (5/9)   [Kremote: Compressing objects:  66% (6/9)   [Kremote: Compressing objects:  77% (7/9)   [Kremote: Compressing objects:  88% (8/9)   [Kremote: Compressing objects: 100% (9/9)   [Kremote: Compressing objects: 100% (9/9), done.[K
+remote: Total 13 (delta 2), reused 0 (delta 0)[K
+Unpacking objects:   7% (1/13)   Unpacking objects:  15% (2/13)   Unpacking objects:  23% (3/13)   Unpacking objects:  30% (4/13)   Unpacking objects:  38% (5/13)   Unpacking objects:  46% (6/13)   Unpacking objects:  53% (7/13)   Unpacking objects:  61% (8/13)   Unpacking objects:  69% (9/13)   Unpacking objects:  76% (10/13)   Unpacking objects:  84% (11/13)   Unpacking objects:  92% (12/13)   Unpacking objects: 100% (13/13)   Unpacking objects: 100% (13/13), done.
+From git://github.com/rails/acts_as_list
+ * branch            HEAD       -> FETCH_HEAD
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ cd vendor
+]0;david@fry: ~/projects/Intranet/vendordavid@fry:~/projects/Intranet/vendor$ cd plugins/
+]0;david@fry: ~/projects/Intranet/vendor/pluginsdavid@fry:~/projects/Intranet/vendor/plugins$ ls
+[0m[01;34maasm[0m  [01;34macts_as_commentable[0m  [01;34macts_as_list[0m  [01;34mpaperclip[0m  [01;34mrestful_authentication[0m  [01;34mvalidates_existence[0m  [01;34mwill_paginate[0m
+[m]0;david@fry: ~/projects/Intranet/vendor/pluginsdavid@fry:~/projects/Intranet/vendor/plugins$ cd ..
+]0;david@fry: ~/projects/Intranet/vendordavid@fry:~/projects/Intranet/vendor$ ls
+[0m[01;34mplugins[0m
+[m]0;david@fry: ~/projects/Intranet/vendordavid@fry:~/projects/Intranet/vendor$ cd ..
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ cd ..[3Plscd ..[3Plscd plugins/[2Pvendorscript/plugin install git://github.com/rails/acts_as_list.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd vendor[K[K[K[K[K[K[K[K[K[Kscriptcon[K[K[K/console 
+Loading development environment (Rails 2.3.8)
+>> o = [K Offer.new
+=> #<Offer id: nil, commercial_id: nil, description: nil, creation_day: nil, offer_type_id: nil, state: nil, full_billed: nil, created_at: nil, updated_at: nil, account_id: nil, order_cod: nil, win_probability: nil, estimated_date_resolution: nil, intermediary_id: nil, actual_version_id: nil, responsable_id: nil, approved_doc_file_name: nil, approved_doc_content_type: nil, approved_doc_file_size: nil, approved_doc_updated_at: nil>
+>> o = Offer.new[K[K[K[K[K[K[K[K[K[K[K[K. commer[K[K[K[K[K[K[Kcommercial_id = 1,[K
+=> [0;36m1[0;0m
+>> o.commercial_id = 1[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksave
+=> [0;32mfalse[0;0m
+>> o.save[K[K[K[Koffer_type_iod[K[Kd = 2
+=> [0;36m2[0;0m
+>> o.offer_type_id = 2[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K.account =[K[K_id = 99
+=> [0;36m99[0;0m
+>> o.account_id = 99[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K.saveç
+NoMethodError: undefined method `saveç' for #<Offer:0xb6cafc90>
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:264:in `method_missing'
+	from (irb):6
+>> o.saveç[K
+=> [0;32mfalse[0;0m
+>> o.save!
+ActiveRecord::RecordInvalid: Validation failed: Creation day can't be blank
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from (irb):8
+>> o.save![K[K[K[K[Kcreate
+NoMethodError: Attempt to call private method
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:240:in `method_missing'
+	from (irb):9
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console 
+Loading development environment (Rails 2.3.8)
+>> o.commercial_id = 1
+NameError: undefined local variable or method `o' for #<Object:0xb7780958>
+	from (irb):1
+>> => 1
+SyntaxError: compile error
+(irb):2: syntax error, unexpected tASSOC
+	from (irb):2
+>> >> o.save
+SyntaxError: compile error
+(irb):3: syntax error, unexpected tRSHFT
+>> o.save
+  ^
+	from (irb):3
+>> => false
+SyntaxError: compile error
+(irb):4: syntax error, unexpected tASSOC
+=> false
+  ^
+	from (irb):4
+>> >> o.offer_type_id = 2
+SyntaxError: compile error
+(irb):5: syntax error, unexpected tRSHFT
+>> o.offer_type_id = 2
+  ^
+	from (irb):5
+>> => 2
+SyntaxError: compile error
+(irb):6: syntax error, unexpected tASSOC
+	from (irb):6
+>> >> o.account_id = 99
+SyntaxError: compile error
+(irb):7: syntax error, unexpected tRSHFT
+>> o.account_id = 99
+  ^
+	from (irb):7
+>> => 99
+SyntaxError: compile error
+(irb):8: syntax error, unexpected tASSOC
+=> 99
+  ^
+	from (irb):8
+>> o = Offer.new
+=> #<Offer id: nil, commercial_id: nil, description: nil, creation_day: nil, offer_type_id: nil, state: nil, full_billed: nil, created_at: nil, updated_at: nil, account_id: nil, order_cod: nil, win_probability: nil, estimated_date_resolution: nil, intermediary_id: nil, actual_version_id: nil, responsable_id: nil, approved_doc_file_name: nil, approved_doc_content_type: nil, approved_doc_file_size: nil, approved_doc_updated_at: nil>
+>> o .[K[K.commercial_id = 2
+=> [0;36m2[0;0m
+>> o.commercial_id = 2[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kaccount_id = 99
+=> [0;36m99[0;0m
+>> o.account_id = 99[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Koffer_type_id = 2
+=> [0;36m2[0;0m
+>> o.offer_type_id = 2[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksave
+=> [0;32mfalse[0;0m
+>> o.save!
+ActiveRecord::RecordInvalid: Validation failed: Creation day can't be blank, Commercial does not exist
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from (irb):14
+>> o.save![Koffer_type_id = 2[C[C[C[C[C[2Paccount_id = 99[C[C[C[C[Ccommercial_id = 2[C[K1
+=> [0;36m1[0;0m
+>> o.commercial_id = 1[C[C[C[C[Csave![K[K!
+ActiveRecord::RecordInvalid: Validation failed: Creation day can't be blank
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from (irb):16
+>> v = new version[C[1Persion[1Persion[1Persion[1Prsion[1PersionVersion[C[C[C[C[C[C.new
+=> #<Version id: nil, cod: nil, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: nil, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: nil, updated_at: nil>
+>> v..[Kcod = 0
+=> [0;36m0[0;0m
+>> v.cod = 0[K[K[K[K[K[K[K[K[Kv.save
+ActiveRecord::StatementInvalid: Mysql::Error: Unknown column 'position' in 'order clause': SELECT * FROM `versions` WHERE (`versions`.`offer_id` IS NULL)  ORDER BY position DESC LIMIT 1
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract_adapter.rb:221:in `log'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:323:in `execute'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:638:in `select'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all_without_query_cache'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:62:in `select_all'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/base.rb:664:in `find_by_sql'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/base.rb:1578:in `find_every'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/base.rb:1535:in `find_initial'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/base.rb:616:in `find'
+	from /home/david/projects/Intranet/vendor/plugins/acts_as_list/lib/active_record/acts/list.rb:203:in `bottom_item'
+	from /home/david/projects/Intranet/vendor/plugins/acts_as_list/lib/active_record/acts/list.rb:195:in `bottom_position_in_list'
+	from /home/david/projects/Intranet/vendor/plugins/acts_as_list/lib/active_record/acts/list.rb:186:in `add_to_list_bottom'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/callbacks.rb:178:in `send'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/callbacks.rb:178:in `evaluate_method'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/callbacks.rb:166:in `call'
+	from /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/callbacks.rb:93:in `run'
+... 4 levels...
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/callbacks.rb:344:in `callback'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/callbacks.rb:265:in `create'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/base.rb:2915:in `create_or_update_without_callbacks'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/callbacks.rb:250:in `create_or_update'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/base.rb:2573:in `save_without_validation'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1090:in `save_without_dirty'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:79:in `save_without_transactions'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:229:in `send'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:229:in `with_transaction_returning_status'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:228:in `with_transaction_returning_status'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:196:in `save'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:196:in `save'
+	from (irb):19>> qut[Kit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console 
+Loading development environment (Rails 2.3.8)
+>> v = Version.new
+=> #<Version id: nil, cod: nil, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: nil, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: nil, updated_at: nil>
+>> v.save
+=> [0;32mfalse[0;0m
+>> v.save!
+ActiveRecord::RecordInvalid: Validation failed: Cod can't be blank
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from (irb):3
+>> v.in[K[K[K[Ko = o[KOffer.dind[K[K[K[Kfind[K[K[K[Klast
+=> #<Offer id: 1703, commercial_id: "32", description: "", creation_day: "2010-11-25", offer_type_id: "1", state: "Eliminada", full_billed: nil, created_at: "2010-11-25 08:30:34", updated_at: "2010-11-25 08:31:16", account_id: 125, order_cod: "", win_probability: nil, estimated_date_resolution: nil, intermediary_id: 0, actual_version_id: 576, responsable_id: nil, approved_doc_file_name: nil, approved_doc_content_type: nil, approved_doc_file_size: nil, approved_doc_updated_at: nil>
+>> o.versions < <[K[K< v
+=> [0;32mfalse[0;0m
+>> o.versions << v!
+NoMethodError: undefined method `v!' for #<Object:0xb76fe958>
+	from (irb):6
+>> o.versions << v![K
+=> [0;32mfalse[0;0m
+>> o.versions << v[K[K[K[K[K.[K.insert[K[K[K[K[K[K[K.insertat[K[K_at()0)[C[7P << v![K[C[C[C[C[1P = Offer.last[C[C[C[7Pv.save![K = Version.new[C[C[C[C[9P.savecod = 0[C[C[C[C = Version.new[C[C[Co.commercial_id = 2[C[C[C=> 99[K[C[C[Co.commercial_id = 2[C[C[C[4Pv = Version.new[C[C[C[C[6P.cod = 0[K[K[K[K[K[K[K[K[Kquit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console [10Pcd ..script/console 
+Loading development environment (Rails 2.3.8)
+>> o.versions.insert_at(0)[7P << v![K[C[C[C[8Pv.save![K[K[K[K[K[K[Kv = v[KVersion.new
+=> #<Version id: nil, cod: nil, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: nil, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: nil, updated_at: nil>
+>> v.[K[Ko = Offer.last
+=> #<Offer id: 1703, commercial_id: "32", description: "", creation_day: "2010-11-25", offer_type_id: "1", state: "Eliminada", full_billed: nil, created_at: "2010-11-25 08:30:34", updated_at: "2010-11-25 08:31:16", account_id: 125, order_cod: "", win_probability: nil, estimated_date_resolution: nil, intermediary_id: 0, actual_version_id: 576, responsable_id: nil, approved_doc_file_name: nil, approved_doc_content_type: nil, approved_doc_file_size: nil, approved_doc_updated_at: nil>
+>> o.versions.[K << v
+=> [0;32mfalse[0;0m
+>> o.versions
+=> [#<Version id: nil, cod: nil, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1703, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: nil, updated_at: nil>]
+>> v.cod = 11[K[K0
+=> [0;36m0[0;0m
+>> o.versions << v
+=> [#<Version id: 577, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1703, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: "2010-11-26 13:12:17", updated_at: "2010-11-26 13:12:17">, #<Version id: 577, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1703, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: "2010-11-26 13:12:17", updated_at: "2010-11-26 13:12:17">]
+>> o.versions
+=> [#<Version id: 577, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1703, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: "2010-11-26 13:12:17", updated_at: "2010-11-26 13:12:17">, #<Version id: 577, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1703, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: "2010-11-26 13:12:17", updated_at: "2010-11-26 13:12:17">]
+>> o.versions.length
+=> [0;36m2[0;0m
+>> o.versions.length[K[K[K[K[K[Kremove_at()1)[C
+NoMethodError: undefined method `remove_at' for #<Class:0xb6cefa34>
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/base.rb:1994:in `method_missing_without_paginate'
+	from /home/david/projects/Intranet/vendor/plugins/will_paginate/lib/will_paginate/finder.rb:170:in `method_missing'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/associations/association_collection.rb:380:in `send'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/associations/association_collection.rb:380:in `method_missing_without_paginate'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/base.rb:2178:in `with_scope'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/associations/association_proxy.rb:207:in `send'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/associations/association_proxy.rb:207:in `with_scope'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/associations/association_collection.rb:376:in `method_missing_without_paginate'
+	from /home/david/projects/Intranet/vendor/plugins/will_paginate/lib/will_paginate/finder.rb:170:in `method_missing'
+	from (irb):9
+>> o.versions.remove_at(1)[K[K[K[K[K[K[K[K[K[K[K[K[K[]0][C
+=> #<Version id: 577, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1703, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: "2010-11-26 13:12:17", updated_at: "2010-11-26 13:12:17">
+>> o.versions[0][1P]1]
+=> #<Version id: 577, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1703, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: "2010-11-26 13:12:17", updated_at: "2010-11-26 13:12:17">
+>> o.ver[K[K[Kversions.length
+=> [0;36m2[0;0m
+>> o.versions.length[K[K[K[K[K[Kremvo[K[Kove
+NoMethodError: undefined method `remove' for #<Class:0xb6cefa34>
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/base.rb:1994:in `method_missing_without_paginate'
+	from /home/david/projects/Intranet/vendor/plugins/will_paginate/lib/will_paginate/finder.rb:170:in `method_missing'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/associations/association_collection.rb:380:in `send'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/associations/association_collection.rb:380:in `method_missing_without_paginate'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/base.rb:2178:in `with_scope'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/associations/association_proxy.rb:207:in `send'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/associations/association_proxy.rb:207:in `with_scope'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/associations/association_collection.rb:376:in `method_missing_without_paginate'
+	from /home/david/projects/Intranet/vendor/plugins/will_paginate/lib/will_paginate/finder.rb:170:in `method_missing'
+	from (irb):13
+>> o.versions.remove[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kquit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console 
+Loading development environment (Rails 2.3.8)
+>> o = Offer.last
+=> #<Offer id: 1682, commercial_id: "32", description: "Licencias Urchin", creation_day: "2010-10-13", offer_type_id: "3", state: "Pendiente", full_billed: 0, created_at: "2010-10-13 15:51:20", updated_at: "2010-11-24 08:38:10", account_id: 286, order_cod: nil, win_probability: nil, estimated_date_resolution: nil, intermediary_id: nil, actual_version_id: 555, responsable_id: nil, approved_doc_file_name: nil, approved_doc_content_type: nil, approved_doc_file_size: nil, approved_doc_updated_at: nil>
+>> o.ver[K[K[K[K[Kv.v[KVer[K[K[K[K = Version.new
+=> #<Version id: nil, cod: nil, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: nil, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: nil, updated_at: nil>
+>> o.versions << v
+=> [0;32mfalse[0;0m
+>> o.versions.length
+=> [0;36m3[0;0m
+>> o.versions.last
+=> #<Version id: nil, cod: nil, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: nil, updated_at: nil>
+>> o.saver[K!
+ActiveRecord::RecordInvalid: Validation failed: Versions is invalid
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from (irb):6
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console 
+Loading development environment (Rails 2.3.8)
+>> v = Version.new
+=> #<Version id: nil, cod: nil, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: nil, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: nil, updated_at: nil>
+>> v.save
+=> [0;32mfalse[0;0m
+>> v.save!
+ActiveRecord::RecordInvalid: Validation failed: Cod can't be blank
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/validations.rb:1102:in `save_without_dirty!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/dirty.rb:87:in `save_without_transactions!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/database_statements.rb:136:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:182:in `transaction'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:208:in `rollback_active_record_state!'
+	from /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/transactions.rb:200:in `save!'
+	from (irb):3
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console 
+Loading development environment (Rails 2.3.8)
+>> v = Version.new
+=> #<Version id: nil, cod: nil, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: nil, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: nil, updated_at: nil>
+>> v.save
+=> [0;32mtrue[0;0m
+>> o = Offer.last
+=> #<Offer id: 1682, commercial_id: "32", description: "Licencias Urchin", creation_day: "2010-10-13", offer_type_id: "3", state: "Pendiente", full_billed: 0, created_at: "2010-10-13 15:51:20", updated_at: "2010-11-24 08:38:10", account_id: 286, order_cod: nil, win_probability: nil, estimated_date_resolution: nil, intermediary_id: nil, actual_version_id: 555, responsable_id: nil, approved_doc_file_name: nil, approved_doc_content_type: nil, approved_doc_file_size: nil, approved_doc_updated_at: nil>
+>> o.versions << v
+=> [#<Version id: 554, cod: 0, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: "Urchin Balidea_propuesta JL1682.doc", doc_content_type: "application/msword", doc_file_size: 109056, doc_updated_at: nil, created_at: "2010-11-24 08:38:10", updated_at: "2010-11-24 08:38:10">, #<Version id: 555, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: "Balidea_propuesta_JL_1682_1.doc", doc_content_type: "application/msword", doc_file_size: 340480, doc_updated_at: nil, created_at: "2010-11-24 08:38:10", updated_at: "2010-11-24 08:38:10">, #<Version id: 578, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: "2010-11-26 13:19:25", updated_at: "2010-11-26 13:19:36">]
+>> o.versions.length
+=> [0;36m3[0;0m
+>> o.versions.length[K[K[K[K[Kast
+=> #<Version id: 578, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: "2010-11-26 13:19:25", updated_at: "2010-11-26 13:19:36">
+>> o.versions.last[K[K[K[K[K[]2][C
+=> #<Version id: 578, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: "2010-11-26 13:19:25", updated_at: "2010-11-26 13:19:36">
+>> o.versions[2][C[1P]1]
+=> #<Version id: 555, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: "Balidea_propuesta_JL_1682_1.doc", doc_content_type: "application/msword", doc_file_size: 340480, doc_updated_at: nil, created_at: "2010-11-24 08:38:10", updated_at: "2010-11-24 08:38:10">
+>> o.versions[1][1P]0]
+=> #<Version id: 554, cod: 0, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: "Urchin Balidea_propuesta JL1682.doc", doc_content_type: "application/msword", doc_file_size: 109056, doc_updated_at: nil, created_at: "2010-11-24 08:38:10", updated_at: "2010-11-24 08:38:10">
+>> v = Version.new
+=> #<Version id: nil, cod: nil, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: nil, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: nil, updated_at: nil>
+>> o.versions << v
+=> [#<Version id: 554, cod: 0, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: "Urchin Balidea_propuesta JL1682.doc", doc_content_type: "application/msword", doc_file_size: 109056, doc_updated_at: nil, created_at: "2010-11-24 08:38:10", updated_at: "2010-11-24 08:38:10">, #<Version id: 555, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: "Balidea_propuesta_JL_1682_1.doc", doc_content_type: "application/msword", doc_file_size: 340480, doc_updated_at: nil, created_at: "2010-11-24 08:38:10", updated_at: "2010-11-24 08:38:10">, #<Version id: 578, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: "2010-11-26 13:19:25", updated_at: "2010-11-26 13:19:36">, #<Version id: 579, cod: 2, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: "2010-11-26 13:21:09", updated_at: "2010-11-26 13:21:09">]
+>> v[Ko.versions.last
+=> #<Version id: 579, cod: 2, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: "2010-11-26 13:21:09", updated_at: "2010-11-26 13:21:09">
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console 
+Loading development environment (Rails 2.3.8)
+>> v = Version.-[Knew
+=> #<Version id: nil, cod: nil, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: nil, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: nil, updated_at: nil>
+>> o = Offer.last
+=> #<Offer id: 1682, commercial_id: "32", description: "Licencias Urchin", creation_day: "2010-10-13", offer_type_id: "3", state: "Pendiente", full_billed: 0, created_at: "2010-10-13 15:51:20", updated_at: "2010-11-24 08:38:10", account_id: 286, order_cod: nil, win_probability: nil, estimated_date_resolution: nil, intermediary_id: nil, actual_version_id: 555, responsable_id: nil, approved_doc_file_name: nil, approved_doc_content_type: nil, approved_doc_file_size: nil, approved_doc_updated_at: nil>
+>> v.sabe[K[Kve
+=> [0;32mtrue[0;0m
+>> o.versions << v
+=> [#<Version id: 554, cod: 0, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: "Urchin Balidea_propuesta JL1682.doc", doc_content_type: "application/msword", doc_file_size: 109056, doc_updated_at: nil, created_at: "2010-11-24 08:38:10", updated_at: "2010-11-24 08:38:10">, #<Version id: 555, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: "Balidea_propuesta_JL_1682_1.doc", doc_content_type: "application/msword", doc_file_size: 340480, doc_updated_at: nil, created_at: "2010-11-24 08:38:10", updated_at: "2010-11-24 08:38:10">, #<Version id: 578, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: "2010-11-26 13:19:25", updated_at: "2010-11-26 13:19:36">, #<Version id: 580, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: "2010-11-26 13:22:41", updated_at: "2010-11-26 13:22:46">, #<Version id: 579, cod: 2, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: "2010-11-26 13:21:09", updated_at: "2010-11-26 13:21:09">]
+>> o.versions.last
+=> #<Version id: 579, cod: 2, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: "2010-11-26 13:21:09", updated_at: "2010-11-26 13:21:09">
+>> o.versions.last[K[K[K[Klength
+=> [0;36m5[0;0m
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console 
+Loading development environment (Rails 2.3.8)
+>> o.versions[2].lastremove[4P[1]0].remove_at(1)[6Plength[K.insert_at(0)[7P << v![K[C[C[C[8Pv.save![Kcod = 0[C[C[C[C = Version.new
+=> #<Version id: nil, cod: nil, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: nil, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: nil, updated_at: nil>
+>> quit
+]0;david@fry: ~/projects/Intranetdavid@fry:~/projects/Intranet$ script/console 
+Loading development environment (Rails 2.3.8)
+>> o.versions[2].lastremove[4P[1]0].remove_at(1)[6Plength[K.insert_at(0)[7P << v![K[C[C[C[8Pv.save![Kcod = 0[C[C[C[C = Version.new
+=> #<Version id: nil, cod: nil, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: nil, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: nil, updated_at: nil>
+>> v.save
+=> [0;32mtrue[0;0m
+>> o = Offer.last
+=> #<Offer id: 1682, commercial_id: "32", description: "Licencias Urchin", creation_day: "2010-10-13", offer_type_id: "3", state: "Pendiente", full_billed: 0, created_at: "2010-10-13 15:51:20", updated_at: "2010-11-24 08:38:10", account_id: 286, order_cod: nil, win_probability: nil, estimated_date_resolution: nil, intermediary_id: nil, actual_version_id: 555, responsable_id: nil, approved_doc_file_name: nil, approved_doc_content_type: nil, approved_doc_file_size: nil, approved_doc_updated_at: nil>
+>> o.versions << v
+=> [#<Version id: 554, cod: 0, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: "Urchin Balidea_propuesta JL1682.doc", doc_content_type: "application/msword", doc_file_size: 109056, doc_updated_at: nil, created_at: "2010-11-24 08:38:10", updated_at: "2010-11-24 08:38:10">, #<Version id: 555, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: "Balidea_propuesta_JL_1682_1.doc", doc_content_type: "application/msword", doc_file_size: 340480, doc_updated_at: nil, created_at: "2010-11-24 08:38:10", updated_at: "2010-11-24 08:38:10">, #<Version id: 581, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: "2010-11-26 13:25:01", updated_at: "2010-11-26 13:25:14">]
+>> o.versions.length
+=> [0;36m3[0;0m
+>> o.versions.length[K[K[K[K[Kast
+=> #<Version id: 581, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: "2010-11-26 13:25:01", updated_at: "2010-11-26 13:25:14">
+>> o.versions.last[K[K[K[K[]0]
+SyntaxError: compile error
+(irb):7: syntax error, unexpected '['
+o.versions.[0]
+            ^
+	from (irb):7
+>> o.versions.[0][1P[0]
+=> #<Version id: 554, cod: 0, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: "Urchin Balidea_propuesta JL1682.doc", doc_content_type: "application/msword", doc_file_size: 109056, doc_updated_at: nil, created_at: "2010-11-24 08:38:10", updated_at: "2010-11-24 08:38:10">
+>> o.versions[0][1P]1]
+=> #<Version id: 555, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: "Balidea_propuesta_JL_1682_1.doc", doc_content_type: "application/msword", doc_file_size: 340480, doc_updated_at: nil, created_at: "2010-11-24 08:38:10", updated_at: "2010-11-24 08:38:10">
+>> o.versions[1][1P]2]
+=> #<Version id: 581, cod: 1, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_amount: nil, offer_id: 1682, doc_file_name: nil, doc_content_type: nil, doc_file_size: nil, doc_updated_at: nil, created_at: "2010-11-26 13:25:01", updated_at: "2010-11-26 13:25:14">
+>> v = Version.new
+=> #<Version id: nil, cod: nil, licences_amount: nil, recurrent_services_amount: nil, no_recurrent_services_a

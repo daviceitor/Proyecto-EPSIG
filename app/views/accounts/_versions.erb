@@ -1,0 +1,42 @@
+<table>
+  <tr>
+    <th>Código</th>
+    <th>Fichero</th>
+    <th>Fecha Inserción</th>
+    <th>Descripción</th>
+    <th>Licencias</th>    
+    <th>Servicios no recurrentes</th>
+    <th>Servicios recurrentes</th>
+  </tr>
+  <% offer.versions.reverse.each do |version| %>
+    <tr>
+      <td>
+        <%=h version.version_cod %>
+      </td>
+      <td><%= link_to image_tag("descargar.png"), version.doc.url if version.doc? %></td>
+      <td><%=l version.created_at, :format => :very_short %></td>
+      <td class="description"><%=h version.description %></td>
+      <td style="color:black">
+        <% if version.licences_amount.nil? %>
+          &mdash;
+        <% else %>
+          <%=h number_to_currency(version.licences_amount) %>
+        <% end %>
+      </td>
+      <td style="color:black">
+        <% if version.no_recurrent_services_amount.nil? %>
+          &mdash;
+        <% else %>
+          <%=h number_to_currency(version.no_recurrent_services_amount) %>
+        <% end %>
+      </td>
+      <td style="color:black">
+        <% if version.recurrent_services_amount.nil? %>
+          &mdash;
+        <% else %>
+          <%=h number_to_currency(version.recurrent_services_amount) %>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+</table>

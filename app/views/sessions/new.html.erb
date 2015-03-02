@@ -1,0 +1,30 @@
+<%= stylesheet_link_tag 'login.css' %>
+
+<div class="login-header">
+  <%= link_to image_tag("logo.png"), "http://intranet.mvconsultoria.es", :class => "logo" %>
+</div>
+
+<div class="login">
+  <h2>Log In</h2>
+  <p style="color: green"><%= notice %></p>
+  <% form_tag session_path do -%>
+    <table class="login">
+      <tr>
+        <td> <%= label_tag 'Email' %> </td>
+        <td> <%= text_field_tag 'email', @email %> </td>
+      </tr>
+      <tr>
+        <td> <%= label_tag 'Contraseña' %> </td>
+        <td> <%= password_field_tag 'password', nil %> </td>
+      </tr>
+      <tr>
+        <td> <%= label_tag 'remember_me', 'Recuerdame' %> </td>
+        <td> <%= check_box_tag 'remember_me', '1', @remember_me %> </td>
+      </tr>
+    </table>
+    <p class="center error"> <%= flash[:error] %> </p>
+    <p class="center"><%= image_submit_tag "/images/acceder.png" %></p>
+    <p class="center"> <%= link_to "¿Olvidaste tu contraseña?", "/forgot_password" %></p>
+  <% end -%>
+
+</div>

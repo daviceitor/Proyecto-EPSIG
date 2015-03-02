@@ -1,0 +1,8 @@
+<% unless similars.empty? %>
+<span><%= image_tag('warning.png') %> Contactos similares</span>
+<ul>
+ <% similars.each do |s| %>
+  <li> <div class="contact"><%= link_to "#{s.name} #{s.sur_name}", s %></div> <%= link_to s.seat.account.name, s.seat.account, :class => "contact-account" %> </li>
+ <% end %>
+</ul>
+<% end %>

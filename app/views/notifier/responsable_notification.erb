@@ -1,0 +1,20 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<p>Propuesta: <%= @offer.id %> </p>
+<p>Cuenta: <%= @offer.account.name %></p>
+<p>Descripción: <%= @offer.actual_version.description %></p>
+<p>ha sido elegido como responsable de la propuesta anteriormente descrita</p>
+
+<p>Puede acceder a ella a través del siguiente enlace:<br/>
+  <%= url_for :controller => 'offers', :action => 'show', :id => @offer.id, :only_path => false, :host => 'intranet.mvconsultoria.com' %>
+</p>
+
+
+Saludos!
+
+<p>
+  <%= render :partial => "sign", :layout => false %>
+</p>

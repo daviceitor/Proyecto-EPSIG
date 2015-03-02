@@ -1,0 +1,84 @@
+<div class="offer-billing">
+<% form_for @offer, :html => { :class => "edit-offer-bills-data"} do |f| %>
+  <h3 class="underline">Facturación:</h3>
+  <dt>Intermediario:</dt> <dd>
+    <% if current_user.can_manage_bills? %>
+      <%= f.select :intermediary_id, options_for_select(get_accounts_for_select.insert(0,["Ninguno",""]), :selected => @offer.intermediary_id) %>
+    <% else %>
+    <span class="intermediary">
+      <%= @offer.intermediary.name unless @offer.intermediary.nil? %>
+      <%= "Ninguno" if @offer.intermediary.nil? %>
+    </span>
+    <% end %>    
+    <span class="help-text">Empresa a través de la cual se facturan los productos/servicios (si procede)</span>
+  </dd>
+  <%= f.hidden_field :full_billed %>
+  <dt>Código de pedido:</dt><dd>
+    <% if current_user.can_manage_bills? %>
+      <%= f.text_field :order_cod, :size => "12" %>
+      <%= f.submit 'Guardar', :id => "offer_submit", :style => "display:none" %>
+      <%= image_tag "tick.png", :id => @offer.id, :style => "display:none" %>
+    <% else %>
+      <span class="order-cod">
+        <%= @offer.order_cod unless @offer.order_cod.nil? %>
+      </span>
+    <% end %>
+    <span class="help-text">Referencia empleada por el cliente para esta propuesta</span>
+  </dd>
+  <br/>
+<% end %>
+
+<ol id="edit-multiple">
+  <%= render :partial => "/bills/edit_form", :collection => @offer.bills, :as => :bill %>
+</ol>
+
+<% if !@offer.full_billed? and current_user.can_manage_bills? %>
+  <div class="bills-actions">
+    <%= image_tag("add.png") %> <%= link_to_function("Añadir factura", "create_and_append_content('bills','create',#{@offer.id},'#edit-multiple')", :id => "new-bill") %><br/><br/>
+    <div>
+      <%= image_tag("full_billed.png", :class => "full-billed") %>
+      <%= link_to_function "Cerrar Facturación", "if(confirm('Al cerrar la facturación no podrá añadir mas facturas. ¿Está Seguro?')){$('.bills-actions').hide();$('#offer_full_billed').val(1);$('##{@offer.id}').attr('feedback','disable');$('.edit-offer-bills-data').submit()}", :id => "billing-close" %>
+    </div>
+  </div>
+<% end %>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+         
+    $('#offer_intermediary_id').change(function(){
+      $('#<%=@offer.id%>').attr("feedback","disable")
+      $('.edit-offer-bills-data').submit();
+    });
+
+    $('#offer_order_cod').keyup(function(){
+      $('#offer_submit').show();
+      $('#<%=@offer.id%>').hide();
+    });
+    
+    var opt_offer = { success: offer_update_feedback, dataType: "json"};
+    $('.edit-offer-bills-data').ajaxForm(opt_offer);
+
+    $('.edit_bill').live('submit',function(){
+      var form = $(this);
+      var opt_bill = {
+                       success: bill_update_success,
+                       error: function(data){bill_update_error(data,form)}, 
+                       dataType: "json"
+                   };
+      $(this).ajaxSubmit(opt_bill);
+      return false;
+    });
+
+    $('input:text').live('keyup', function() {
+      $(this).parents('.edit_bill').find('input:submit').show();
+      $(this).parents('.edit_bill').find("img[alt='Tick']").hide();
+    });
+
+    $("input:checkbox").live('change', function() {
+      $(this).parents('.edit_bill').find('input:submit').show();
+      $(this).parents('.edit_bill').find("img[alt='Tick']").hide();
+    });
+  });
+</script>
+

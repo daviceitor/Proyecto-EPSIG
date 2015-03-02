@@ -1,0 +1,30 @@
+<%= javascript_include_tag "jquery-1.4.3.min.js" %>
+<%= javascript_include_tag "application.js" %>
+
+
+<div class="content">
+
+  <div class="content-header">
+    <p style="color: green"><%= notice %></p>
+    <div class="right"><%= image_tag "add.png" %> <%= link_to('Nuevo usuario', new_user_path) %></div>
+    <h2 class="title">Usuarios</h2>
+  </div>
+
+  <div class="content-body">
+
+    Filtrar por rol: <%= select_tag "rol", options_for_select(get_rols_for_select.insert(0,["Todos","all"]), :selected => "all"), :id => "filter" %>
+    <div id="users-list">
+      <%= render :partial => "list" %>
+    </div>
+
+    <script type="text/javascript">
+      $(document).ready (function(){
+        $("#filter").change(function(){
+          load_filter_content("users","index",$(this).val(),"#users-list",function(){highlight_rows($(".main-table"),"even")});
+        });
+        highlight_rows($(".main-table"),"even");
+      });
+    </script>
+
+  </div>
+</div>

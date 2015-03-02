@@ -1,0 +1,23 @@
+<p>
+  <b>Licences amount:</b>
+  <%=h @version.licences_amount %>
+</p>
+
+<p>
+  <b>Recurrent services amount:</b>
+  <%=h @version.recurrent_services_amount %>
+</p>
+
+<p>
+  <b>No recurrent services amount:</b>
+  <%=h @version.no_recurrent_services_amount %>
+</p>
+
+<p>
+  <b>Offer:</b>
+  <%=h @version.offer_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_version_path(@version) %> |
+<%= link_to 'Back', versions_path %>

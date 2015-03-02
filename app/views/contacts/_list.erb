@@ -1,0 +1,22 @@
+<table>
+  <tr>
+    <td colspan="8" class="pagination">
+      <%= will_paginate @contacts, :params => {:filter => @filter}, :previous_label => "&laquo; Anterior", :next_label => "Siguiente &raquo;" %>
+    </td>
+  </tr>
+  <tr>
+    <th>Name</th>
+    <th>Title</th>
+    <th>Create Day</th>
+  </tr>
+
+<% @contacts.each do |contact| %>
+  <tr>
+    <td><%= link_to contact.name+" "+contact.sur_name, contact %></td>
+    <td><%=h contact.title %></td>
+    <td><%=h contact.created_at.strftime("%d/%m/%Y") %></td>
+    <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
+    <td><%= link_to 'Destroy', contact, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

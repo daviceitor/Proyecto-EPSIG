@@ -1,0 +1,61 @@
+<%= javascript_include_tag "jquery-1.4.3.min.js" %>
+<%= javascript_include_tag "application.js" %>
+<%= stylesheet_link_tag 'accounts.css' %>
+
+<div class="content">
+
+  <div class="content-header">
+    <p style="color: green"><%= notice %></p>
+    <h2 class="title">Nueva Cuenta</h2>
+  </div>
+
+  <div class="content-body">
+    <% form_for(@account) do |f| %>
+      <%= f.error_messages %>
+
+      <dl>
+        <dt><%= f.label :name, "Nombre" %></dt>
+        <dd><%= f.text_field :name %></dd>
+        <div id="similar-accounts"></div>
+        <dt><%= f.label :description, "Descripcion" %></dt>
+        <dd><%= f.text_area :description, :rows => 5, :cols => 50 %></dd>
+
+        <dt><%= f.label :account_type, "Tipo" %></dt>
+        <dd><%= f.select :account_type, Account.account_types %></dd>
+
+        <dt><%= f.label :industry_type, "Industria" %></dt>
+        <dd><%= f.select :industry_type, Account.industry_types %></dd>
+
+        <dt><%= f.label :website, "Website" %></dt>
+        <dd><%= f.text_field :website %></dd>
+
+      </dl>
+      <div class="actions">
+        <%= image_tag('save.png') %>
+        <%= f.submit 'Crear cuenta', :class => "submit" %>
+        <%= image_tag("cancel.png")%> <%= link_to 'Volver', accounts_path %>
+      </div>
+
+    <% end %>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+  delayTimer = null;
+
+  function getSimilars() {
+    load_filter_content("accounts","render_similars",$('#account_name').val(),"#similar-accounts");
+    delayTimer = null;
+  }
+
+  $(document).ready (function(){
+    $("#account_name").keyup(function(){
+
+      if ( delayTimer )
+        window.clearTimeout( delayTimer );
+
+      delayTimer = window.setTimeout(getSimilars, 150 );
+    });
+  });
+</script>

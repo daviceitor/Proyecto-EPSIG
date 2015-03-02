@@ -1,0 +1,13 @@
+<p>
+  <b>Nombre:</b>
+  <%=h @resource.name %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @resource.url %>
+</p>
+
+
+<%= link_to('Editar', edit_resource_path(@resource)) if current_user.can_manage_resource?(@resource) || current_user.Admin? %> |
+<%= link_to 'Volver', resources_path %>

@@ -1,0 +1,37 @@
+# SQLite version 3.x
+#   gem install sqlite3-ruby (not necessary on OS X Leopard)
+development:
+  adapter: mysql
+  database: intranet_RoR_production
+  username: root
+  password: B0n1t0
+  pool: 5
+  timeout: 5000
+  encoding: utf8
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  adapter: mysql
+  database: intranet_test
+  username: root
+  password: B0n1t0
+  pool: 5
+  timeout: 5000
+  encoding: utf8
+
+production:
+  adapter: mysql
+  encoding: utf8
+  host: 192.168.1.74
+  port: 3306
+  reconnect: false
+  database: intranet_RoR_production
+  pool: 5
+  username: mvweb4
+  password: B0n1t0
+  socket: /var/run/mysqld/mysqld.sock
+
+preproduction:
+  development

@@ -1,0 +1,41 @@
+<%= javascript_include_tag "jquery-1.4.3.min.js" %>
+<%= javascript_include_tag "application.js" %>
+
+<div class="content">
+
+  <div class="content-header">
+    <p style="color: green"><%= notice %></p>
+    <div class="right"><%= image_tag "add.png" %> <%= link_to('Nuevo recurso', new_resource_path) %></div>
+    <h2 class="title">Recursos</h2>
+  </div>
+  <div class="content-body">
+    <%= will_paginate @resources, :previous_label => "&laquo; Anterior", :next_label => "Siguiente &raquo;" %>
+    <table class="main-table">
+      <tr>
+        <th>Nombre</th>
+        <th>Url</th>
+        <th>&nbsp;</th>
+      </tr>
+
+      <% @resources.each do |resource| %>
+        <tr>
+          <td><%=h resource.name %></td>
+          <td><%= link_to resource.url, resource.url %></td>
+          <td class="actions">
+            <% if current_user.can_manage_resource?(resource) || current_user.Admin? %>
+              <%= image_tag ("edit.png") %> <%= link_to('Editar', edit_resource_path(resource)) %>
+              <%= image_tag ("delete.png") %> <%= link_to('Eliminar', resource, :confirm => '¿Estas seguro?', :method => :delete) %>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    </table>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready (function(){
+    $(".main-table > tbody > tr:even").addClass("even");
+  });
+</script>

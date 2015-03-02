@@ -1,0 +1,27 @@
+<%= javascript_include_tag "jquery-1.4.3.min.js" %>
+<%= javascript_include_tag "application.js" %>
+
+<p>
+<%= link_to "Cuentas", "accounts" %>
+<%= link_to "Contactos", "contacts" %>
+</p>
+
+<h1>Listing contacts</h1>
+
+Filtrar por cuenta: <%= select_tag "accounts", options_for_select(get_accounts_for_select.insert(0,["Todas","all"])), :id => "filter" %>
+
+<div id="contacts-list">
+  <%= render :partial => "list" %>
+</div>
+
+<br />
+
+<script type="text/javascript">
+$(document).ready (function(){
+  $("#filter").change(function(){
+    load_filter_content("contacts","index",$(this).val(),"#contacts-list");
+  });
+});
+</script>
+
+<%= link_to 'New contact', new_contact_path %>

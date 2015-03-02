@@ -1,0 +1,31 @@
+<table class="seats">
+
+  <% account.seats.sort!{|s1,s2| s1.name <=> s2.name}.each do |seat| %>
+    <%
+    if seat.name == "(Sin Sede)"
+      next
+    end
+  %>
+    <tr>
+      <td><%= image_tag("seat.png") %></td><td><%= link_to seat.name, seat %></td>
+      <td class="actions">
+        <% if current_user.can_manage_crm? %>
+          <%= image_tag("edit.png") %>
+          <%= link_to('Editar', edit_seat_path(seat)) %>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+
+  <% if account.seats.length == 1 %>
+    <tr><td>No hay sedes</td></tr>
+  <% end %>
+
+</table>
+
+<div class="right">
+  <% if current_user.can_manage_crm? %>
+    <%= image_tag("add.png") %>
+    <%= link_to("Añadir sede", new_account_seat_url(account))  %>
+  <% end %>
+</div>

@@ -1,0 +1,199 @@
+
+.total {
+    color: #AAAAAA;
+    font-size: 13px;
+}
+
+.hidden-div{
+    margin-left: 20px;
+    display:none;
+}
+
+.hidden-div .right{
+    margin-left: 8px;
+    float:left;
+}
+
+table.contacts,table.seats{
+    max-width:550px;
+    color:white;
+    clear:both;
+}
+
+table.contacts td,table.seats td{
+    vertical-align: middle;
+}
+
+table.contacts td.title{
+    max-width: 175px;
+}
+
+.main-table td.account-info{
+    width:45%;
+}
+
+.ie .main-table td.account-info{
+    width:40%;
+}
+
+div.show-info-account .add{
+    margin-top: 10px;
+}
+
+div.show-info-account .add a{
+    border: none;
+}
+
+div.show{    
+    float:left;
+    width: 75%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    -moz-border-radius: 10px 0px 10px 10px;
+    -webkit-border-radius: 10px 0px 10px 10px;
+    border-radius: 10px 0px 10px 10px;
+}
+
+div.show-info-account{
+    float:left;
+    max-width:17%;
+    margin:-20px 0px 20px 0px;
+    opacity: 0.5;
+    background: none repeat scroll 0 0 #000000;
+    padding: 20px;
+    color:white;
+    -moz-border-radius: 0px 10px 10px 10px;
+    -webkit-border-radius: 0px 10px 10px 10px;
+    border-radius: 0px 10px 10px 10px;
+}
+
+.ie div.show-info-account{
+    margin-right: 20px;
+}
+
+div.show-info-account a{
+    color:white;
+}
+
+.show .main-table td{
+    text-align:center;
+    vertical-align: middle;
+}
+
+.show .main-table td:first-child {
+   text-align: left;
+}
+
+dd.offers-table{
+    width: 95%;
+    padding-left: 10px;
+}
+
+.ie dd.offers-table{
+    clear:both;
+}
+
+dd.offers-table th{
+    text-align:center;
+}
+
+.ie .show .main-table .tr-versions{
+    height: 16px;
+}
+
+.ie .show dd table{
+    margin-left: 0px;
+}
+
+dd.offers-table td.description{
+    text-align: left;
+    padding:0px;
+    padding-left:10px;
+    padding-bottom: 6px;
+}
+
+dd.offers-table .tr-versions td.description{
+    text-align: left;
+    padding:0px;
+    vertical-align: middle;
+}
+
+.offer td{
+    background: none repeat scroll 0 0 #DDEEEE;
+}
+
+.offer td:first-child{
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius:10px;
+    border-radius-topleft:10px;
+}
+
+.offer td:last-child{
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius:10px;
+    border-radius-topright:10px;
+}
+
+.offer td.description{
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius:0px;
+    border-radius-topleft:0px;
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius:0px;
+    border-radius-topright:0px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-right-radius:10px;
+    -webkit-border-bottom-left-radius:10px;
+    border-radius-bottomright:10px;
+    border-radius-bottomleft:10px;
+}
+
+div#similar-contacts, div#similar-accounts{
+    clear:both;
+    margin-left: 125px;
+}
+
+div#similar-accounts span, div#similar-contacts span{
+    padding-left:25px;
+    color:FireBrick;
+}
+
+div#similar-contacts div.contact{
+    width: 180px;
+    display:inline-block;
+}
+
+div#similar-contacts a.contact-account{
+    color: dodgerBlue;
+}
+
+.tr-versions td:first-child{
+    width:1px;
+}
+
+td.offer-id{
+    width:50px;
+}
+
+.seat-show dd{
+    width:28%
+}
+
+div.map{
+    display:block;
+    margin-left: 520px;
+    width:inherit;
+    height:300px;
+}
+
+div.large-map{
+    display:block;
+    margin-left: 520px;
+    width:inherit;
+    text-align: center;
+}
+
+.ie .show .main-table{
+    width:95%;
+}

@@ -1,0 +1,102 @@
+<%= javascript_include_tag "jquery-1.4.3.min.js" %>
+<%= javascript_include_tag "application.js" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>Intranet </title>
+    <%= stylesheet_link_tag 'styles' %>
+  </head>
+  <!--[if IE 6]>
+     <body class="ie ie6">
+  <![endif]-->
+  <!--[if IE 7]>
+     <body class="ie ie7">
+  <![endif]-->
+  <!--[if IE 8]>
+     <body class="ie ie8">
+  <![endif]-->
+  <!--[if !IE]>-->
+  <body>
+    <!--<![endif]-->
+    <%  if logged_in? %>
+      <div id ="header" class ="header-div">
+        <div class ="current-user-div">
+          <li> Usuario: <%= link_to current_user.name, edit_user_path(current_user) %> </li>
+          <li> <%= image_tag "salir.png" %> <%= link_to 'Salir',"/logout" %> </li>
+        </div>
+
+        <%= link_to image_tag("logo.png"), "http://intranet.mvconsultoria.es", :class => "logo" %>
+
+        <div class="search">
+          <%= image_tag("search.png") %> Buscar <%= text_field_tag :search, "", :size => 28, :id => "search_text", :autocomplete => "off" %>
+          <div class="search-box"></div>
+        </div>
+
+        <div id ="nav" class ="nav-links">
+          <%= link_to "Inicio", "/home", :class => current_class("home") if current_user.can_go_to_home? && !current_user.Admin? %>
+          <%= link_to "CRM", "/accounts", :class => current_class("accounts") %>
+          <%= link_to "Recursos", "/resources", :class => current_class("resources") %>
+          <%= link_to("Propuestas", "/offers", :class => current_class("offers")) if current_user.can_index_offers? %>
+          <%= link_to("Usuarios", "/users", :class => current_class("users")) if current_user.can_manage_users? %>
+          <%= link_to("Operaciones", "/operations", :class => current_class("operations")) if current_user.can_view_operations? %>
+          <%= link_to("OpenKM", "/openkm", :class => current_class("openkm")) %>
+        </div>
+      </div>
+    <% end %>
+    <%= yield %>
+
+  </body>
+</html>
+
+<script type="text/javascript">
+  delayTimer = null;
+  var efect = false;
+
+  function getResults() {
+    var search = $("#search_text").val();
+
+    if($('.search-box div').length === 0){
+      efect = true
+    }
+
+    var url = <%= url_for(:controller => :search, :action => :index).to_json %>;
+
+    if(search.length > 2){
+      $.get(url+"?search="+search, function(data){
+
+        $(".search-box").html(data)
+
+        if(efect){
+          $('.ie .search-box').css("width","35em");
+          $('.search-box div').fadeIn('400')
+          efect = false;
+        }
+        else{
+          $('.search-box div').show();
+        }
+      });
+    }
+    else{
+      $('.search-box div').fadeOut('800',function(){
+        $('.search-box').children().remove();
+        $('.ie .search-box').css("width","0px");
+      });
+    }
+    
+    delayTimer = null;
+  }
+
+  $(document).ready (function(){
+    $("#search_text").keyup(function(){
+      if ( delayTimer )
+        window.clearTimeout( delayTimer );
+     
+      delayTimer = window.setTimeout(getResults, 200 );
+        
+    });
+  });
+</script>

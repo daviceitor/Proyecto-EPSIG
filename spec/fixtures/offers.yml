@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  commercial: 
+  account_id: 
+  creation_day: 
+  offer_type_id: 
+  Description: 
+  State: 
+  win_probability: 
+  estimated_date_resolution: 
+  intermediary: 
+  actual_version: 
+  service_responsable: 
+  order_cod: 
+  full_charged: false
+
+two:
+  commercial: 
+  account_id: 
+  creation_day: 
+  offer_type_id: 
+  Description: 
+  State: 
+  win_probability: 
+  estimated_date_resolution: 
+  intermediary: 
+  actual_version: 
+  service_responsable: 
+  order_cod: 
+  full_charged: false

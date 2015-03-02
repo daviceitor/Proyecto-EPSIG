@@ -1,0 +1,23 @@
+<p>
+  <b>Cod:</b>
+  <%=h @bill.cod %>
+</p>
+
+<p>
+  <b>Charged:</b>
+  <%=h @bill.charged %>
+</p>
+
+<p>
+  <b>Charged date:</b>
+  <%=h @bill.charged_date %>
+</p>
+
+<p>
+  <b>Offer:</b>
+  <%=h @bill.offer_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_bill_path(@bill) %> |
+<%= link_to 'Back', bills_path %>

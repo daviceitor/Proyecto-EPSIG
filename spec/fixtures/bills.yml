@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cod: MyString
+  charged: false
+  charged_date: 2010-11-11
+  offer_id: 1
+
+two:
+  cod: MyString
+  charged: false
+  charged_date: 2010-11-11
+  offer_id: 1

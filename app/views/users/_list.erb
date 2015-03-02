@@ -1,0 +1,25 @@
+<%= will_paginate @users, :params => {:filter => @filter}, :previous_label => "&laquo; Anterior", :next_label => "Siguiente &raquo;" %>
+
+<table class="main-table">
+
+  <tr>
+    <th>Nombre</th>
+    <th>Email</th>
+    <th>Rol</th>
+    <th>Fecha creación</th>
+    <th>&nbsp;</th>
+  </tr>
+
+  <% @users.each do |user| %>
+    <tr>
+      <td><%=h user.name %></td>
+      <td><%=h user.email %></td>
+      <td><%=h user.role.humanize %></td>
+      <td><%=l user.created_at, :format => :short %></td>
+      <td class="actions">
+        <%= image_tag "edit.png" %> <%= link_to 'Editar', edit_user_path(user) %>
+        <%= image_tag "delete.png" %> <%= link_to 'Eliminar', user, :confirm => '¿Estas Seguro?', :method => :delete %>
+      </td>
+    </tr>
+  <% end %>
+</table>

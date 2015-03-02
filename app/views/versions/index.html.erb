@@ -1,0 +1,26 @@
+<h1>Listing versions</h1>
+
+<table>
+  <tr>
+    <th>Licences amount</th>
+    <th>Recurrent services amount</th>
+    <th>No recurrent services amount</th>
+    <th>Offer</th>
+  </tr>
+
+<% @versions.each do |version| %>
+  <tr>
+    <td><%=h version.licences_amount %></td>
+    <td><%=h version.recurrent_services_amount %></td>
+    <td><%=h version.no_recurrent_services_amount %></td>
+    <td><%=h version.offer_id %></td>
+    <td><%= link_to 'Show', version %></td>
+    <td><%= link_to 'Edit', edit_version_path(version) %></td>
+    <td><%= link_to 'Destroy', version, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New version', new_version_path %>

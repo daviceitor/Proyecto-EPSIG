@@ -1,0 +1,90 @@
+<%= javascript_include_tag "jquery-1.4.3.min.js" %>
+<%= javascript_include_tag "application.js" %>
+<%= stylesheet_link_tag "accounts.css"  %>
+
+<div class="content">
+
+  <div class="content-header">
+    <p style="color: green"><%= notice %></p>
+    <h2 class="title">Nuevo contacto</h2>
+  </div>
+
+  <div class="content-body">
+
+    <% form_for(@contact) do |f| %>
+      <%= f.error_messages %>
+
+      <dl>
+        <dt><%= label_tag "Account", "Cuenta" %></dt>
+        <dd><%= select_tag "account", options_for_select(get_accounts_for_select, :selected => @account_id.to_i) %></dd>
+
+        <dt><%= f.label :seat, "Sede" %></dt>
+        <dd><%= f.select :seat_id, get_seats_by_account_for_select(@account_id), :selected => ""  %></dd>
+
+        <dt><%= f.label :name %></dt>
+        <dd><%= f.text_field :name %></dd>
+
+        <dt><%= f.label :sur_name %></dt>
+        <dd><%= f.text_field :sur_name %></dd>
+        <div id="similar-contacts"></div>
+
+        <dt><%= f.label :description %></dt>
+        <dd><%= f.text_field :description %></dd>
+
+        <dt><%= f.label :lead_source %></dt>
+        <dd><%= f.select :lead_source, Contact.lead_sources.insert(0,["",nil]), :selected => nil  %></dd>
+
+        <dt><%= f.label :title %></dt>
+        <dd><%= f.text_field :title %></dd>
+
+        <dt><%= f.label :department %></dt>
+        <dd><%= f.text_field :department %></dd>
+
+        <%= render :partial => "common/contact_means", :locals => {:contacts => @contact} %>
+      </dl>
+
+      <div class="actions">
+        <%= image_tag('save.png') %>
+        <%= f.submit 'Crear contacto', :class => "submit" %>
+        <%= image_tag("cancel.png")%> <%= link_to 'Volver', :back %>
+      </div>
+
+    <% end %>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+  delayTimer = null;
+
+  $(document).ready (function(){
+    $("#account").change(function(){
+      $.getJSON("/contacts/new.json?account_id="+$(this).val(),
+      function(data) {
+        $("#contact_seat_id option").detach()
+        $.each(data, function(i,s){
+          $("#contact_seat_id").append("<option value='"+s.seat.id+"'>"+s.seat.name+"</option>");
+        });
+      });
+
+    });
+
+    function getSimilars() {
+      contact = {name: $('#contact_name').val(), sur_name: $('#contact_sur_name').val()}
+
+      load_filter_content("contacts","render_similars",contact,"#similar-contacts");
+      delayTimer = null;
+    }
+
+    $(document).ready (function(){
+      $("#contact_sur_name").keyup(function(){
+
+        if ( delayTimer )
+          window.clearTimeout( delayTimer );
+
+        delayTimer = window.setTimeout(getSimilars, 150 );
+      });
+    });
+
+  });
+</script>

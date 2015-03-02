@@ -1,0 +1,92 @@
+<%= javascript_include_tag "jquery-1.4.3.min.js" %>
+<%= stylesheet_link_tag 'offers.css' %>
+
+<div class="content">
+
+  <div class="content-header">
+    <p style="color: green"><%= notice %></p>
+    <h2 class="title"><%= "Version  #{@version.cod-1} de propuesta #{@version.offer.id}" %></h2>
+  </div>
+
+  <div class="content-body">
+
+    <% form_for @version, :html => { :multipart => true } do |f| %>
+      <%= f.error_messages %>
+
+      <dl>
+
+        <dt class="description"><%= f.label :description, "Descripción" %></dt>
+        <dd><%= f.text_area :description, :rows => 5, :cols => 50 %><br/>
+          <span class="help-text">Breve resumen de los productos/servicios incluidos en la propuesta</span>
+        </dd>
+
+        <dt class="label-amount"><%= check_box_tag "licences" %><%= label_tag "Licences amount", "Licencias" %><br/>
+          <span class="help-text">Suscripciones, mantenimientos y licencias vitalicias de herramientas</span>
+        </dt>
+        <dd class="licences amount">Cantidad <%= f.text_field :licences_amount, :size => 10, :autocomplete => "off" %> €</dd>
+
+        <dt class="label-amount"><%= check_box_tag "no_recurrent_services" %><%= label_tag "No recurrent services amount", "Servicios no recurrentes" %><br/>
+          <span class="help-text">Servicios vinculados a proyectos</span>
+        </dt>
+        <dd class="no-recurrent amount">Cantidad <%= f.text_field :no_recurrent_services_amount, :size => 10, :autocomplete => "off" %> €</dd>
+
+        <dt class="label-amount last"><%= check_box_tag "recurrent_services" %><%= label_tag "Recurrent services amount", "Servicios recurrentes" %><br/>
+          <span class="help-text">Servicios de asistencia periódica como los soportes y las bolsas de horas potencialmente renovables</span>
+        </dt>
+        <dd class="recurrent amount">Cantidad <%= f.text_field :recurrent_services_amount, :size => 10, :autocomplete => "off" %> €</dd>
+
+        <dt><%= f.label :doc, "Documento:" %></dt>
+        <dd><%= f.file_field :doc %></dd>
+      </dl>
+      <div class="actions">
+        <%= image_tag('save.png') %>
+        <%= f.submit 'Guardar', :class => "submit" %>
+        <%= image_tag("cancel.png")%> <%= link_to 'Volver', :back %>
+      </div>
+
+    <% end %>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready (function(){
+
+    $("#licences").change(function(){
+      if($.browser.msie)
+        $(".licences.amount").toggleClass("invisible");
+      else
+        $(".licences.amount").toggle();
+
+    });
+
+  $("#no_recurrent_services").change(function(){
+    if($.browser.msie)
+      $(".no-recurrent.amount").toggleClass("invisible");
+    else
+      $(".no-recurrent.amount").toggle();
+  });
+
+  $("#recurrent_services").change(function(){
+    if($.browser.msie)
+      $(".recurrent.amount").toggleClass("invisible");
+    else
+      $(".recurrent.amount").toggle();
+  });
+     
+  $.each($('input:checkbox'), function(i,s){
+    var input = $(this).parent().next("dd").children("input:text")
+    if(input.val().length > 0){
+      $(this).attr('checked', true);
+      input.parent().show();
+    }
+    else{
+      if($.browser.msie)
+        input.parent().toggleClass("invisible");
+      else
+        input.parent().hide();
+    }
+  });
+
+});
+</script>

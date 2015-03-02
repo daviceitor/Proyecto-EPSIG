@@ -1,0 +1,44 @@
+<%= will_paginate @offers, :params => {:filter => @filter}, :previous_label => "&laquo; Anterior", :next_label => "Siguiente &raquo;" %>
+<table class="main-table">
+  <tr>
+    <th class="description">Propuesta</th>
+    <th>&nbsp;</th>
+    <th>Fichero</th>
+    <th>Fecha Creación</th>
+    <th>Comercial</th>
+    <th>Estado</th>
+    <th>&nbsp;</th>
+  </tr>
+
+  <% @offers.each do |offer| %>
+    <tr class="offer">
+      <td class="offer-id"><%=link_to offer.actual_version.version_cod, offer %><br/>
+      </td>
+      <td>
+        <%= (offer.Ganada?)? image_tag("winned.png") : image_tag("not_winned.png") %>
+        <%= (offer.full_billed?)? image_tag("billed.png") : (offer.bills.empty?)? image_tag("not_billed.png") : image_tag("partially_billed.png") %>
+        <%
+          charged = 0
+          offer.bills.each {|b| charged = charged +1 if b.charged?}           
+        %>
+        <%= (charged==0)? image_tag("not_charged.png") : (charged < offer.bills.size)? image_tag("partially_charged.png") : image_tag("charged.png") %>
+      </td>
+      <td><%= link_to image_tag("descargar.png"), offer.actual_version.doc.url if offer.actual_version.doc? %></td>
+      <td><%=h offer.creation_day.strftime("%d/%m/%Y") %></td>
+      <td><%=h offer.commercial.name %></td>
+      <td><span class="<%= offer.state %>"><%= offer.state %></span></td>
+      <td class="actions">
+        <%= image_tag ("versions.png") %> <%= link_to_function "Versiones", "$('##{offer.id}_versions').slideToggle()" %>
+      </td>
+    </tr>
+    <tr class="offer"><td colspan="7" class="description"><%=h offer.actual_version.description %></td></tr>
+    
+    <tr class="tr-versions">
+      <td colspan="7">
+        <div id="<%= offer.id %>_versions" class="hidden-div">
+          <%= render :partial => 'versions', :locals => {:offer => offer} %>
+        </div>
+      </td>
+    </tr>
+  <% end %>
+</table>

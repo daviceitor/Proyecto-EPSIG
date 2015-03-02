@@ -1,0 +1,21 @@
+
+<dt><%= label_tag :contact_means, "Medios Contacto" %></dt>
+<dd class="contact-means">
+    <table id="medios">
+    <!-- Si estamos en 'create' entonces mostramos campos para insertar -->
+        <% if contacts.contact_means.empty? %>
+          <tr>            
+            <td><%= text_field_tag name="method[]", '', :class => "method" %></td>
+            <td> : <%= text_field_tag name="value[]", '', :class => "value" %></td>
+          </tr>
+        <% end %>
+    <!-- Si estamos en edit mostramos los campos existentes -->
+        <% contacts.contact_means.keys.sort.each do |key| %>
+          <tr>           
+            <td><%= text_field_tag name="method[]", key, :class => "method" %></td>
+            <td> : <%= text_field_tag name="value[]", contacts.contact_means[key], :class => "value" %></td>
+          </tr>
+        <% end %>
+    </table>
+  <%=  link_to_function image_tag("add.png"), "new_row('medios')", :class => "right" %>
+</dd>

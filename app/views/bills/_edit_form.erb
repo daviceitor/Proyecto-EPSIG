@@ -1,0 +1,13 @@
+<li class="bills">
+  <% form_for bill do |f| %>
+    <span>Código de factura:</span> <span><%= f.text_field :cod, :id => "bill_cod_#{bill.id}", :disabled => (!current_user.can_manage_bills? || (bill.charged? && !current_user.Admin?)), :size => 12 %></span>
+    <span><%= f.check_box :charged, :id => "bill_charged_#{bill.id}", :disabled => !current_user.can_manage_bills? %>Cobrado</span>
+
+    <% if current_user.can_manage_bills? %>
+      <%= image_tag("delete2.png")%> <%= link_to "Borrar", bill, :class => "delete", :confirm => 'La factura será eliminada, ¿Está seguro?', :method => :delete %>
+      <%= f.submit 'Guardar', :id => "bill_submit_#{bill.id}", :style => "display:none" %>
+      <%= image_tag "tick.png", :id => bill.id, :style => "display:none" %>
+      <span class="error" style="display:none"><%= image_tag("error.png") %> La factura debe llevar un código</span>
+    <% end %>
+  <% end %>
+</li>

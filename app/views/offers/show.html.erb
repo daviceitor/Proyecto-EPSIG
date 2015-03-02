@@ -1,0 +1,89 @@
+<%= javascript_include_tag "jquery-1.4.3.min.js" %>
+<%= javascript_include_tag "application.js" %>
+<%= javascript_include_tag "jquery.form.js" %>
+<%= javascript_include_tag "jquery.dateFormat-1.0.js" %>
+<%= stylesheet_link_tag 'offers.css' %>
+
+<div class="content" <%= "style='float:left;width:70%;margin-right:0px;'" if @offer.Ganada? %> >
+
+  <div class="content-header show">
+    <p style="color: green"><%= notice %></p>
+    <div class="right">
+      <% if current_user.can_edit_offer?(@offer) %>
+        <%= image_tag ("edit.png") %>
+        <%= link_to('Editar', edit_offer_path(@offer)) %>
+      <% end %>
+    </div>
+    <h2 class="title"><%=h "Propuesta #{@offer.actual_version.version_cod}" %></h2>
+  </div>
+
+  <div class="content-body show">
+
+    <div class="offer-data <%= "win" if @offer.Ganada? %>" >
+      <div class="col-right">
+        <dl>
+          <dt>Fecha creación:</dt>
+          <dd><%=h @offer.creation_day.strftime("%d/%m/%Y") %></dd>
+          <% if @offer.Ganada? %>           
+              <dt>Jefe de proyecto:</dt> <dd><%= " #{@offer.responsable.name} " if @offer.responsable %></dd>
+              <dt>Documento de aprobación:</dt> <dd><%= link_to(image_tag("descargar.png"), @offer.approved_doc.url) if @offer.approved_doc? %> </dd>
+          <% else %>
+            <% if @offer.win_probability? %>
+              <dt>Probabilidad de ganar:</dt>
+              <dd><%=h @offer.win_probability %> %</dd>
+            <% end %>
+
+            <% if @offer.estimated_date_resolution? %>
+              <dt>Fecha Estimada de resolución:</dt>
+              <dd><%=h @offer.estimated_date_resolution.strftime("%d/%m/%Y") %></dd>
+            <% end %>
+
+          <% end %>
+        </dl>
+      </div>
+      <div class="col-left">
+        <dl>
+          <dt>Comercial:</dt>
+          <dd><%=h @offer.commercial.name %></dd>
+
+          <dt>Cuenta:</dt>
+          <dd><%=link_to @offer.account.name, @offer.account %></dd>
+
+          <dt>Fabricante/Herramienta:</dt>
+          <dd><%=h @offer.offer_type.name %></dd>
+
+          <dt>Estado:</dt>
+          <dd><span class="<%= @offer.state %>"><%= @offer.state %></span></dd>
+
+        </dl>
+      </div>      
+      </div>
+      <% if @offer.Ganada? %>
+        <%= render :partial => "/bills/edit_multiple", :layout => false %>
+
+      <% end %>
+
+      <% if !@offer.historial.empty? %>
+        <div class ="version-history">
+          <h3 class="underline">Historial de versiones:</h3>
+          <div>
+            <%= render :partial => "versions", :locals => {:offer => @offer} %>
+          </div>
+        </div>
+      <% end %>
+
+      <div class="actions show"></div>
+
+    </div>
+  </div>
+
+  <% if @offer.Ganada? %>
+
+    <div class="comments-info">
+      <h3 class="underline">Historial y Comentarios: </h3>
+      <div id="comments" class="comments">
+        <%= render :partial => 'comments', :layout => false %>
+      </div>
+    </div>
+
+  <% end %>

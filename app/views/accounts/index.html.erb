@@ -1,0 +1,32 @@
+<%= javascript_include_tag "jquery-1.4.3.min.js" %>
+<%= javascript_include_tag "application.js" %>
+<%= stylesheet_link_tag 'accounts.css' %>
+
+<div class="content">
+
+  <div class="content-header">
+    <p style="color: green"><%= notice %></p>
+    <div class="right">
+      <% if (current_user.can_manage_crm?) %>
+        <%= image_tag("add.png") %>
+        <%= link_to('Nueva Cuenta', new_account_path) %>
+      <% end %>
+    </div>
+    <h2 class="title">Cuentas <span class="total">( <%= @accounts.total_entries %> Cuentas )</span></h2>
+  </div>
+  <div class="content-body">
+    Filtrar por industria: <%= select_tag "industry_type", options_for_select([["Todas","all"]] + Account.industry_types, :selected => "all"), :id => "filter" %>
+    <div id="accounts-list">
+      <%= render :partial => "list" %>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready (function(){
+      $("#filter").change(function(){
+        load_filter_content("accounts","index",$(this).val(),"#accounts-list", function(){highlight_rows($(".main-table"),"even")});
+      });
+      highlight_rows($(".main-table"),"even");
+    });
+  </script>
+</div>

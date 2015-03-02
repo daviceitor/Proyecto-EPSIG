@@ -1,0 +1,27 @@
+<table class="contacts">
+  <% account.contacts.sort!{|c1,c2| c1.name <=> c2.name}.each do |contact| %>
+    <tr>
+      <td><%= image_tag ("contact.png") %>  <%= link_to "#{contact.name} #{contact.sur_name}", contact %></td>
+      <td class="title"><%=h contact.title %></td>
+      <td class="actions">
+        <%if current_user.can_manage_crm? %>
+          <%= image_tag("edit.png")%>
+          <%= link_to('Editar', edit_contact_path(contact)) %>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+
+  <% if account.contacts.empty? %>
+    <tr><td>No hay contactos</td></tr>
+  <% end %>
+
+</table>
+
+<div class="right">
+ <% if current_user.can_manage_crm? %>
+    <%= image_tag("add.png") %>
+    <%= link_to( "Añadir contacto", new_account_contact_url(account))  %>
+ <% end %>
+</div>
+

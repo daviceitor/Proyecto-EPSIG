@@ -1,0 +1,409 @@
+body { background: url(../images/fondo.png); color: black; }
+
+body, p, ol, ul, td {
+    font: 12px/18px "Lucida Grande","Trebuchet MS",Arial,sans-serif;
+    margin: 0 auto 20px;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+pre {
+    background-color: #eee;
+    padding: 10px;
+    font-size: 11px;
+}
+
+a { 
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px dotted #CCCCCC;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.ie table{
+    border-collapse: collapse;
+}
+
+img { border: none; }
+
+li {
+    list-style: none;
+}
+
+div.pagination{
+    float: right;
+    display: block;
+}
+.pagination .current{
+    color: #00ADD6;
+    font-weight: bold;
+}
+
+.pagination a, .pagination span{
+    border-bottom: 1px dotted #CCCCCC;
+    color: #777777;
+}
+
+.fieldWithErrors {
+    padding: 2px;
+    background-color: red;
+    display: table;
+}
+
+#errorExplanation {
+    width: 400px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    background-color: #c00;
+    color: #fff;
+}
+
+#errorExplanation p {
+    color: #333;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+#errorExplanation ul li {
+    font-size: 12px;
+    list-style: square;
+}
+
+.center {
+    text-align:center
+}
+
+.error{
+    color:red;
+}
+
+.header-div{
+    margin: 25px 30px;
+    padding-left: 30px;
+}
+
+.header-div a,.login-header a{
+    color: #000;
+    text-decoration: none;
+    border:0px;
+}
+
+.nav-links{
+    padding-top: 25px;
+    display: block
+}
+
+.nav-links a{    
+    background:none repeat scroll 0 0 #000000;
+    opacity: 0.5;
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 15px 7px;
+    margin-right: 5px;
+    -moz-border-radius:5px 5px 0 0;
+    -webkit-border-radius:5px 5px 0 0;
+    border-radius:5px 5px 0 0;
+}
+
+.nav-links a:hover{
+    background: none repeat scroll 0 0 #111111
+}
+
+.ie .nav-links a:hover{
+    background:none repeat scroll 0 0 #000000;
+}
+
+.ie .nav-links a.current:hover{
+    background:none repeat scroll 0 0 #FFFFFF;
+}
+
+.nav-links a.current{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+    color: #222222;
+    opacity: 1;
+}
+
+.current-user-div{
+    float:right;
+    background: none repeat scroll 0 0 #000000;
+    font-size: 11px;
+    height: 20px;
+    margin: 0;
+    opacity: 0.5;
+    padding: 10px 25px 10px 10px;
+    color:white;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+.current-user-div li{
+    padding-left: 20px;
+    color: #DDDDDD;
+    float: left;
+    list-style: none outside none;
+}
+
+.current-user-div a{
+    color: white;
+    font-weight: bold;
+}
+
+div.content{
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding-top: 20px;
+    margin: -1.6em 30px 30px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+
+label{
+    font-weight: bold;
+}
+
+h2.title{
+    border-bottom: 1px dotted #CCCCCC;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+.content-header,.content-body{
+    padding: 5px 0;
+    margin: 0 45px 15px;
+}
+
+
+dt{
+    clear:left;
+    float:left;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+dd{
+    margin-bottom: 10px;
+    padding-left: 30px;
+    float:left;
+}
+
+.ie dd{
+    width:65%;
+    padding-left: 0px;
+}
+
+.ie dd table,.ie dd select{
+    margin-left: 112px;
+}
+
+.ie dd.contact-means{
+    width:434px;
+}
+
+div.actions{
+    clear:both;
+    text-align:center;
+    padding-bottom: 20px;
+}
+
+input.submit {
+    background: no-repeat scroll 0 70% transparent;
+    font-size: 12px;
+    padding-bottom: 0;
+    text-align: center;
+    border:none;
+    border-bottom: 1px dotted #CCCCCC;
+    cursor:pointer;
+}
+
+#filter,select{
+    background: none repeat scroll 0 0 #FFFFE6;
+    border: 1px solid #CCCCCC;
+    color: #666666;
+    text-indent: 2px;
+}
+
+.right{
+    float:right;
+}
+
+.main-table{
+    margin: 20px 0;
+    width: 100%;
+}
+
+.ie .main-table{
+    width: 88%;
+}
+
+.ie .main-table td:first-child a{
+   margin-top: 50px;
+}
+
+.main-table th{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #BBBBBB;
+    color: #555555;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 2px 10px;
+    text-align: left;
+}
+
+.main-table td {
+    vertical-align: top;
+    padding: 6px 10px;
+    color: #666666;
+}
+
+.main-table td.actions,th.actions {
+    text-align: right;
+    margin: 0px;
+}
+
+td img{
+    vertical-align: text-top;
+}
+
+div img{
+    vertical-align: text-top;
+}
+
+tr.even {
+    background: none repeat scroll 0 0 #EEEEEE;
+}
+
+.Perdida{
+    color: #E53527;
+}
+
+.Pendiente{
+    color: #F19300;
+}
+
+.Ganada{
+    color: #96BD0D;
+}
+
+.Eliminada{
+    color: darkgray;
+}
+
+div.search{
+    float:right;
+    clear:both;
+    margin-top: 55px;
+    color: white;
+    font-weight: bold;
+}
+
+.ie div.search{
+    margin-top:0px;
+}
+
+div.search input{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-width: thin;
+    background-color: #EEEEEE;
+}
+
+div.search-box{
+    position:absolute;
+    background: none repeat scroll 0 0 #000000;
+    color: #CCCCCC;
+    opacity: 0.85;
+    z-index: 1;
+    right: 30px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    width:35em;
+    top: 12em;
+}
+
+.ie div.search-box{
+    width:0px;
+}
+
+div.search-box .content-header, div.search-box .content-body{
+    padding:0px;
+    margin: 15px;
+    display:none;
+}
+
+div.search-box .close a{
+    color: #CCCCCC;
+}
+
+div.search-box .pagination{
+    float: none;
+    text-align: right;
+}
+
+div.search-box .pagination a, div.search-box .pagination span.disabled{
+    color:white;
+    border:none;
+}
+
+.pagination .current{
+    border:none;
+}
+
+div.search-item-model{
+    float:right;
+    padding: 8px;
+}
+
+div.search-item{
+    background-color: white;
+    color:black;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-top: 15px;
+}
+
+div.search-item a{
+    font-weight: bold;
+}
+
+.search-item ul{
+    min-height: 35px;
+    padding: 8px;
+    margin: 0;
+}
+
+li.second-item a{
+    color: dodgerblue;
+}
+
+.third-item{
+    color: dimgrey;
+}
+
+input{
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-width: thin;
+}

@@ -1,0 +1,78 @@
+<%= javascript_include_tag "jquery-1.4.3.min.js" %>
+<%= stylesheet_link_tag 'accounts.css' %>
+<script src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAA939S557YgkXuFNcAt1ulTBQj6_Re_HE9km5YCVc_Ta2ciixzexS_zwvMT4vkVgtXkdmIOdoLsnxyFA" type="text/javascript"></script>
+
+<div class="content">
+
+  <div class="content-header">
+    <p style="color: green"><%= notice %></p>
+    <div class="right">
+      <% if current_user.can_manage_crm? %>
+        <%= image_tag ("edit.png") %>
+        <%= link_to('Editar', edit_seat_path(@seat)) %>
+      <% end %>
+    </div>
+    <h2 class="title"><%=h @seat.name %></h2>
+  </div>
+
+  <div class="content-body seat-show">
+    <dl>
+      <dt><%= label_tag :account, "Cuenta:" %></dt>
+      <dd><%= link_to @seat.account.name, @seat.account %></dd>
+
+      <dt><%= label_tag :name, "Nombre:" %></dt>
+      <dd><%=h @seat.name %></dd>
+
+      <dt><%= label_tag :street, "Calle:" %></dt>
+      <dd><%=h @seat.street %></dd>
+
+      <dt><%= label_tag :city, "Ciudad:" %></dt>
+      <dd><%=h @seat.city %></dd>
+
+      <dt><%= label_tag :state, "Estado:" %></dt>
+      <dd><%=h @seat.state %></dd>
+
+      <dt><%= label_tag :country, "País:" %></dt>
+      <dd><%=h @seat.country %></dd>
+
+      <dt><%= label_tag :postalcode, "Código Postal:" %></dt>
+      <dd><%=h @seat.postalcode %></dd>
+
+      <dt><%= label_tag :contact_means, "Medios de contacto:" %></dt>
+      <dd>
+        <table id="medios">
+          <% @seat.contact_means.keys.sort.each do |key| %>
+            <tr>
+              <td><%= key %>:</td>
+              <td><%= @seat.contact_means[key] %></td>
+            </tr>
+          <% end %>
+        </table>
+      </dd>
+    </dl>
+
+    <div id="map_div" class="map"></div>
+    <div class="large-map"><%= link_to "Ver mapa en pantalla completa", "http://maps.google.com/?q=#{@coord[0]},+#{@coord[1]}+(#{@seat.name})&iwloc=A&hl=es" %></div>
+    <div class="actions"></div>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+
+  $(document).ready (function(){
+    
+    var map = new GMap2(document.getElementById("map_div"));
+    var center = new GLatLng(<%= "#{@coord[0]} , #{@coord[1]}" %>);
+    map.setCenter(center, 15);    
+    map.setUIToDefault();
+
+    var marker = new GMarker(center, {draggable: false});
+    map.addOverlay(marker);
+   
+    GEvent.addListener(marker, "mouseover", function() {
+      return false;
+    });
+
+  });
+</script>

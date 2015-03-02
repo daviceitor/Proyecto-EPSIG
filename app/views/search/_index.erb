@@ -1,0 +1,24 @@
+<div class="content-header">
+  <div class="right close"><%= link_to_function "Cerrar", "$('.search-box div').hide();$('.search-box div').remove();$('.ie .search-box').css('width','0px');$('#search_text').val('')" %></div>
+  <h2 class="title">Resultados de búsqueda</h2>
+  <%= will_paginate @results, :previous_label => "&laquo; Anterior", :next_label => "Siguiente &raquo;" %>
+</div>
+<div class="content-body">
+  <%= "No se han encontrado registros" if @results.empty? %>
+  <% @results.each do |r| %>
+    <div class="search-item">
+      <%= render :partial => "#{r.class.to_s.underscore}", :locals => {:model => r}, :layout => false %>
+    </div>
+  <% end %>
+</div>
+
+<script type="text/javascript">
+  $("div.search-box .pagination a").click(function(){
+    var link = $(this).attr("href");
+    $(".search-box").load(link, function(){
+      $(".search-box div").show();
+    });
+    return false;
+  });
+</script>
+

@@ -1,0 +1,63 @@
+<%= javascript_include_tag "jquery-1.4.3.min.js" %>
+<%= javascript_include_tag "application.js" %>
+<%= stylesheet_link_tag 'accounts.css' %>
+
+<div class="content show">
+
+  <div class="content-header">
+    <p style="color: green"><%= notice %></p>
+    <div class="right">
+      <% if current_user.can_manage_crm? %>
+        <%= image_tag ("edit.png") %>
+        <%= link_to('Editar', edit_account_path(@account)) %>
+      <% end %>
+    </div>
+    <h2 class="title"><%=h @account.name %> <span class="total">( <%= @offers.count %> Propuestas )</span></h2>
+  </div>
+
+  <div class="content-body">
+
+    <dl>
+
+      <dt><%= label_tag :description, "Descripción:" %></dt>
+      <dd><%=h @account.description %></dd>
+
+      <dt><%= label_tag :account_type, "Tipo:" %></dt>
+      <dd><%=h @account.account_type %></dd>
+
+      <dt><%= label_tag :industry_type, "Industria:" %></dt>
+      <dd><%=h @account.industry_type %></dd>
+
+      <dt><%= label_tag :website, "Website:" %></dt>
+      <dd><%= link_to_if @account.website?, @account.website, (!@account.website.nil? and @account.website.include? "http://")? @account.website : "http://#{@account.website}" %></dd>
+
+      <dt><%= label_tag :offers, "Propuestas:" %></dt>
+      <dd class="offers-table">
+        <% if current_user.can_index_offers? and !@offers.empty? %>
+          <%= render :partial => "offers", :layout => false, :locals => {:offers => @offers} %>
+        <% end %>
+      </dd>
+
+    </dl>
+
+  </div>
+</div>
+
+
+<div class="show-info-account">
+  <div>
+    <h2>Contactos</h2>
+    <%= render :partial => 'contacts_show', :locals => {:account => @account} %>
+  </div>
+
+  <div>
+    <h2>Sedes</h2>
+    <%= render :partial => 'seats_show', :locals => {:account => @account} %>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready (function(){
+    
+  });
+</script>

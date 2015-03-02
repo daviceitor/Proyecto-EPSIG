@@ -1,0 +1,49 @@
+<div class="content">
+
+  <div class="content-header">
+    <p style="color: green"><%= notice %></p>
+    <h2 class="title">Edición usuario</h2>
+  </div>
+
+  <div class="content-body">
+    <% @user.password = @user.password_confirmation = nil %>
+
+    <% form_for(@user) do |f| %>
+      <%= f.error_messages %>
+
+      <dl>
+        <dt><%= f.label :name %></dt>
+        <dd><%= f.text_field :name, :disabled => !current_user.can_manage_users? %></dd>
+
+        <dt><%= f.label :email %></dt>
+        <dd><%= f.text_field :email, :readonly => !current_user.can_manage_users? %></dd>
+
+        <dt><%= f.label :role %></dt>
+        <dd>  <%= if current_user.can_manage_users?
+            f.select :role, get_rols_for_select
+          else
+            current_user.role.humanize
+          end %>
+        </dd>
+
+        <% unless current_user.can_manage_users? %>
+          <dt><%= label_tag :old_password, "Contraseña actual" %></dt>
+          <dd><%= password_field_tag "old_password" %></dd>
+        <% end %>
+
+        <dt><%= f.label :password, "Nueva contraseña" %></dt>
+        <dd><%= f.password_field :password %></dd>
+
+        <dt><%= f.label :password_confirmation %></dt>
+        <dd><%= f.password_field :password_confirmation %></dd>
+
+      </dl>
+
+      <div class="actions">
+        <%= image_tag('save.png') %>
+        <%= f.submit 'Guardar', :class => "submit" %>
+        <%= image_tag("cancel.png")%> <%= link_to 'Volver', :back %>
+      </div>
+    <% end %>
+  </div>
+</div>

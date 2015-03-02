@@ -1,0 +1,3 @@
+<h3>Últimas propuestas pendientes:</h3>
+<div class="right home"><%= image_tag("add_big.png") %> <%= link_to "Nueva Propuesta", new_offer_path %> </div>
+<%= render :partial => "offers", :locals => {:offers => @last_offers_pending} %>

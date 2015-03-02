@@ -1,0 +1,28 @@
+<div class="content">
+
+  <div class="content-header">
+    <p style="color: green"><%= notice %></p>
+    <h2 class="title">Nuevo recurso</h2>
+  </div>
+  <div class="content-body">
+
+    <% form_for(@resource) do |f| %>
+      <%= f.error_messages %>
+
+      <dl>
+        <dt><%= f.label :name, "Nombre" %></dt>
+        <dd><%= f.text_field :name, :size => 100 %></dd>
+      
+        <dt><%= f.label :url, "Url" %></dt>
+        <dd><%= f.text_field :url, :size => 100 %></dd>
+      </dl>
+      
+      <div class="actions">
+        <%= image_tag('save.png') %>
+        <%= f.submit 'Crear recurso', :class => "submit" %>
+        <%= image_tag("cancel.png")%> <%= link_to 'Volver', resources_path %>
+      </div>
+    <% end %>
+
+  </div>
+</div>

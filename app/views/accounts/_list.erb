@@ -1,0 +1,40 @@
+<%= will_paginate @accounts, :params => {:filter => @filter}, :previous_label => "&laquo; Anterior", :next_label => "Siguiente &raquo;" %>
+
+<table class="main-table">
+  <tr>
+    <th>Nombre</th>
+    <th>Industria</th>
+    <th>Tipo</th>
+    <th>Fecha Inserción</th>
+    <th>&nbsp;</th>
+  </tr>
+
+  <% @accounts.each do |account| %>
+    <tr>
+      <td class="account-info"><%=link_to account.name, account %>
+        <div id="<%= account.id %>_contacts" class="hidden-div">
+          <%= render :partial => 'contacts', :locals => {:account => account} %>
+        </div>
+        <div id="<%= account.id %>_seats" class="hidden-div" >
+          <%= render :partial => 'seats', :locals => {:account => account} %>
+        </div>
+      </td>
+      <td><%=h account.industry_type %></td>
+      <td><%=h account.account_type %></td>
+      <td><%=l account.created_at, :format=> :short %></td>
+      <td class="actions">
+        <% if current_user.can_manage_crm? %>
+          <%= image_tag ("edit.png") %>
+          <%= link_to('Editar', edit_account_path(account))  %>
+        <% end %>
+        <%= image_tag ("contacts.png") %> <%= link_to_function("Contactos", "$('##{account.id}_contacts').slideToggle()") %>
+        <%= image_tag ("seats.png") %>  <%= link_to_function("Sedes", "$('##{account.id}_seats').slideToggle()") %>
+        <% if current_user.can_manage_crm? %>
+          <%= image_tag ("delete.png") %>
+          <%= link_to('Eliminar', account, :confirm => '¿Estas Seguro?', :method => :delete)  %>
+        <% end %>
+      </td>
+    </tr>
+
+  <% end %>
+</table>

@@ -1,0 +1,23 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<p>Propuesta: <%= @offer.id %> </p>
+<p>Cuenta: <%= @offer.account.name %></p>
+<p>Descripción: <%= @offer.actual_version.description %></p>
+<p>La propuesta descrita anteriormente ha pasado ha estado ganada
+<% if @user.Operation_manager? %>
+para asignarle un responsable acceda a:<br/> <%= url_for :controller => 'offers', :action => 'edit', :id => @offer.id, :only_path => false, :host => 'intranet.mvconsultoria.com' %>
+<% end %>
+<% if @user.Account_manager? %>
+<% url_bills = "intranet.mvconsultoria.com#{edit_multiple_offer_bills_path(@offer)}" %>
+para comenzar la facturación acceda a:<br/> <%= link_to  url_bills, url_bills %>
+<% end %>
+</p>
+
+Saludos!
+
+<p>
+  <%= render :partial => "sign", :layout => false %>
+</p>

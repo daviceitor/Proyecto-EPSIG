@@ -1,0 +1,522 @@
+
+.total {
+    color: #AAAAAA;
+    font-size: 13px;
+}
+
+.hidden-div{
+    margin-left: 20px;
+    display:none;
+}
+
+.hidden-div .right{
+    margin-top: 5px;
+    margin-left: 8px;
+    float:left;
+}
+
+.main-table td.description{
+    padding:0px;
+    padding-left:10px;
+    padding-bottom: 6px;
+}
+
+.main-table .tr-versions td:first-child{
+    text-align:left;
+    vertical-align: middle;
+}
+
+.ie .main-table .tr-versions td{
+    height: 16px;
+}
+
+.main-table td{
+    vertical-align: middle;
+}
+
+div.filters span{
+    padding-right: 8px;
+}
+
+.ie div.filters span{
+    padding-right: 5px;
+}
+
+div.filters{
+    margin-bottom: 10px;
+}
+
+.offer td{
+    background: none repeat scroll 0 0 #DDEEEE;
+}
+
+.offer td:first-child{
+    -moz-border-radius-topleft: 10px;    
+    -webkit-border-top-left-radius:10px;
+    border-radius-topleft:10px;
+}
+
+.offer td:last-child{
+    -moz-border-radius-topright: 10px;    
+    -webkit-border-top-right-radius:10px;
+    border-radius-topright:10px;
+}
+
+.offer td.description{
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius:0px;
+    border-radius-topleft:0px;
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius:0px;
+    border-radius-topright:0px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-right-radius:10px;
+    -webkit-border-bottom-left-radius:10px;
+    border-radius-bottomright:10px;
+    border-radius-bottomleft:10px;
+}
+
+dt{
+    width: 160px;
+}
+
+div.show dt{
+    text-align: right;
+    width: 140px;
+    font-weight: bold;
+}
+
+div.show dd{
+    margin-left:30px;
+    padding-left:0px;
+}
+
+div.col-right dd{
+    margin-left:30px;
+}
+
+.ie div.show dd{
+    width: 23%;
+}
+
+div.form-ident{
+    float:left;
+    clear:left;
+    margin-left: 10px;
+}
+
+.ie div.form-ident{
+    margin-left: 50px
+}
+
+.underline{
+    text-decoration:underline;
+}
+
+.ie dt h3.underline{
+    width:500px;
+}
+
+table.billed-data{
+    clear:left;
+}
+
+table.billed-data td{
+    padding: 5px 10px 0;   
+}
+
+.ie table.billed-data{
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+div.version-history{
+    clear:both;
+    float:left;
+    margin-top:20px;
+    width:97%;
+    background-color: lightBlue;
+    padding: 15px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+
+.ie div.version-history{
+    width:100%;
+}
+
+.versions th{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #BBBBBB;
+    color: #555555;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 2px 10px;
+    text-align: center;
+}
+
+div.show .versions th{
+    background-color: transparent;
+}
+
+.versions td {
+    vertical-align: middle;
+    padding: 6px 10px;
+    color: #666666;
+    text-align: center;
+}
+
+.versions td.description{
+    text-align: left;
+}
+
+.version-history table{
+    width:100%;
+}
+
+.version-history .right {
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.version-history tr.current-version td{
+    background-color: #DDEEEE;
+
+}
+
+.change-actual-version{
+    text-align: center;
+    display:none;
+}
+
+.show div.change-actual-version{
+    display:block;
+}
+
+.version-history tr.current-version td.change-version{
+    background-color: lightblue;
+}
+
+.change-version{
+    display:none;
+}
+
+.version-history tr.current-version td.first{
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    -webkit-border-top-left-radius:20px;
+    -webkit-border-bottom-left-radius:20px;
+    border-radius-topleft:20px;
+    border-radius-bottomleft:20px;
+}
+
+tr.current-version td:last-child{
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomright: 20px;
+    -webkit-border-top-right-radius:20px;
+    -webkit-border-bottom-right-radius:20px;
+    border-radius-topright:20px;
+    border-radius-bottomright:20px;
+}
+
+div.comments-info{
+    margin: 55px 0px 25px 0px;
+    width: 25%;
+    float:left;
+    background-color: #FDFD9A;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-top-right-radius:10px;
+    -webkit-border-bottom-right-radius:10px;
+    border-radius-topright:10px;
+    border-radius-bottomright:10px;
+}
+
+div.comments-info h3{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+input.comment{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+div.comments{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align:right;
+}
+
+div.form-ident:last-child{
+    margin-top: 25px;
+}
+
+.add-comment{
+    margin-top: 15px;
+    width: 100%;
+    height: 60px;
+}
+
+div.comment{
+    border:solid;
+    border-width:1px;
+    padding: 12px;
+    text-align: left;
+    margin-top: 15px;
+    border-color: black;
+    -moz-border-radius: 5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+.bills span{
+    padding-right: 15px;
+}
+
+span.intermediary,span.order-cod{
+   float:left
+}
+
+.ie input#offer_approved_doc{
+    margin-left:112px;
+}
+
+input#offer_order_cod{
+    float:left;
+}
+
+.ie span.intermediary, .ie span.order-cod{
+    margin-left: 30px;
+    float:none;
+}
+
+.ie .bills dd{
+    clear:left;
+    margin-bottom: 10px;
+}
+
+li.bills{
+    margin-bottom: 10px;
+    height:25px;
+}
+
+li.bills input[submit], li.bills img{
+    display:inline;
+}
+
+div.bills{
+    width:50%;
+}
+
+div.bills-actions{
+    margin-left: 40px;
+    width: 380px;
+}
+
+div.bills-actions a#new-bill{
+    clear:both;
+}
+
+div.bills-actions a#billing-close{
+    margin-top:8px;
+    display:inline-block;
+}
+
+form.edit-offer-bills-data{
+    clear:both;
+}
+
+form.edit-offer-bills-data dd{
+    padding-left: 0px;
+}
+
+ol#edit-multiple{
+    clear:both;
+    padding-top:15px;
+}
+
+.ie .content div.actions.show {
+    padding-top:0px;
+    clear:left;
+}
+
+div#slider{
+    width: 150px;
+}
+
+.ie div#slider{
+    margin-top: 5px;
+    margin-left: 115px;
+}
+
+.amount{
+    height: 10px;
+}
+
+.ie .amount{
+    margin-bottom:38px;
+    width:700px;
+}
+
+.ie dd span.help-text{
+    margin-left:112px;
+}
+
+.ie .offer-billing dd span.help-text{
+    margin-left:30px;
+}
+
+div#pending-data dd{
+    margin-left: 40px;
+}
+
+div.col-right{
+    float:right;
+    width:55%;
+}
+
+.content-body.home .hidden-div td{
+    text-align:center;
+    vertical-align: middle;
+}
+
+div.right.home{
+    line-height: 24px;
+}
+
+div.right.home img{
+    float:left;
+    padding-right:5px;
+}
+
+span.help-text{
+    float:left;
+    clear:left;
+    font-size: 11px;
+    color: #6F6F6F;
+    padding-left:20px;
+}
+
+dt.label-amount{
+    width:350px;
+}
+
+dt.label-amount.last{
+    margin-bottom: 30px;
+}
+
+.ie .invisible{
+    visibility: hidden;
+}
+
+dd span.help-text{
+    padding-left:0px;
+}
+
+div.form-ident.new{
+    margin-top:0px;
+}
+
+img.full-billed{
+    float:left
+}
+
+div.content-body.show dl{
+    float: left;
+    margin-bottom:0px;
+}
+
+div.offer-data{
+    background-color: #DFDFDF;
+    padding: 0px 15px 0px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    float: left;
+    margin-bottom:20px;
+    width:70%;
+}
+
+div.offer-billing{
+    float:left;
+    padding:15px;
+    width:97%;
+    background-color: #D1DFD3;
+    -moz-border-radius: 10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+
+.ie div.show .offer-billing{
+    width:100%;
+}
+
+.content-header.show{
+    margin-bottom:0px;
+}
+
+dt.description{
+    width:50px;
+}
+
+.ie .col-left{
+    width:100%;
+    padding:15px;
+}
+
+.ie .col-left dl{
+    width:100%;
+}
+
+.ie .col-right{
+    padding:15px;
+}
+
+div.show .offer-billing dd{
+    width:70%;
+}
+
+.ie div.show .offer-billing dd select{
+    margin-left:30px;
+}
+.ie div.show span.error{
+    width:50%;
+}
+
+.ie .content-body.show{
+    width:100%;
+}
+
+div.show .win{
+    width:97%;
+}
+
+.ie div.show .win{
+    width:100%;
+}
+
+.ie .show div.col-left dd, .ie .show div.col-right dd{
+    width:40%;
+}
+
+div.show a.delete{
+    margin-right:10px;
+}
+
+table.filters{
+    margin-top:10px;
+    border-spacing: 15px 0px;
+}
+
+table.filters td{
+    padding-bottom: 10px;
+}
+
+div.spinner{
+    clear:both;
+    text-align: center;
+    padding-bottom:20px;
+}

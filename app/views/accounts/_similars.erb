@@ -1,0 +1,8 @@
+<% unless similars.empty? %>
+<span><%= image_tag('warning.png') %> Cuentas similares</span>
+<ul>
+ <% similars.each do |s| %>
+  <li> <%= link_to s.name, s %> </li>
+ <% end %>
+</ul>
+<% end %>

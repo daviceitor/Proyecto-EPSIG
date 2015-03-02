@@ -1,0 +1,10 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+<div class="search-item-model"><%= model.class.human_name %></div>
+<ul>
+  <li class="first-item"><%= link_to model.id, model %></li>
+  <li class="second-item"><%= link_to model.account.name, model.account %></li>
+  <li class="third-item"><%= model.actual_version.description %></li>
+</ul>

@@ -1,0 +1,56 @@
+.logo:hover{
+    background-color: transparent;
+}
+.logo img{
+    border:none;
+}
+
+div.login{
+    background-color: white;
+    width:430px;
+    padding: 20px 20px 10px 20px;
+    margin:30px auto 0 auto;
+    -moz-border-radius: 10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+
+div.login-header{
+   width:410px;
+   margin:0 auto 0 auto;
+   padding-top:30px;
+   padding-left:30px;
+   padding-right: 30px;
+   text-align: left;
+}
+
+table.login{
+    border-spacing: 10px;
+    margin-left: 20px;
+}
+
+.ie table.login td{
+    padding: 10px;
+}
+
+table.login tr td:first-child{
+    width: 150px;
+}
+
+.login h2{
+    margin-left:20px;
+}
+
+#email{
+    width:200px;
+}
+
+p a{
+    text-decoration: none;
+    font-size: 11px;
+    color: #222222;
+}
+
+body{
+    text-align: center;
+}

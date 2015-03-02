@@ -1,0 +1,20 @@
+<h1>Listing offer_types</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+<% @offer_types.each do |offer_type| %>
+  <tr>
+    <td><%=h offer_type.name %></td>
+    <td><%= link_to 'Show', offer_type %></td>
+    <td><%= link_to 'Edit', edit_offer_type_path(offer_type) %></td>
+    <td><%= link_to 'Destroy', offer_type, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New offer_type', new_offer_type_path %>

@@ -1,0 +1,68 @@
+<%= javascript_include_tag "jquery-1.4.3.min.js" %>
+<%= javascript_include_tag "jquery.form.js" %>
+<%= javascript_include_tag "jquery.dateFormat-1.0.js" %>
+<%= javascript_include_tag "application.js" %>
+<%= stylesheet_link_tag 'offers.css' %>
+
+<div class="content">
+
+  <div class="content-header">
+    <p style="color: green"><%= notice %></p>
+    <h2 class="title">Facturas de la propuesta <%= @offer.id %></h2>
+  </div>
+  <div class="content-body">
+
+    <% form_for @offer do |f| %>
+      <%= f.label :intermediary_id, "Intermediario:" %>
+      <% if current_user.can_manage_bills? %>
+        <%= f.select :intermediary_id, options_for_select(get_accounts_for_select.insert(0,["Ninguno",""]), :selected => @offer.intermediary_id) %>
+      <% else %>
+        <%= @offer.intermediary.name unless @offer.intermediary.nil? %>
+        <%= "Ninguno" if @offer.intermediary.nil? %>
+      <% end %>
+      <%= f.hidden_field :full_billed %>
+    <% end %>
+    <br/>
+
+    <ol id="edit-multiple">
+      <%= render :partial => "edit_form", :collection => @bills, :as => :bill %>
+    </ol>
+    
+    <% if !@offer.full_billed? and current_user.can_manage_bills? %>
+    <div class="bills-actions">
+      <%= image_tag("add.png") %> <%= link_to_function("Añadir factura", "create_and_append_content('bills','create',#{@offer.id},'#edit-multiple')", :id => "new-bill") %><br/><br/>
+      <%= link_to_function "Cerrar Facturación", "if(confirm('Al cerrar la facturación no podrá añadir mas facturas. ¿Está Seguro?')){$('.bills-actions').hide();$('#offer_full_billed').val(1);$('.edit_offer').submit()}", :id => "billing-close" %>
+    </div>
+    <% end %>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+    var opciones = { success: bill_update_feedback, dataType: "json"};
+  
+    $('#offer_intermediary_id').change(function(){
+      $('.edit_offer').submit();
+    });
+
+    $('.edit_offer').ajaxForm({dataType: "json"});
+
+    $('.edit_bill').live('submit',function(){
+      $(this).ajaxSubmit(opciones);
+      return false;
+    });
+
+    $('input:text').live('keyup', function() {
+      $(this).parents('.edit_bill').find('input:submit').show();
+      $(this).parents('.edit_bill').find('img').hide();
+    });
+
+    $("input:checkbox").live('change', function() {
+      $(this).parents('.edit_bill').find('input:submit').show();
+      $(this).parents('.edit_bill').find('img').hide();
+    });
+  });
+</script>
+

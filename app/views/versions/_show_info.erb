@@ -1,0 +1,18 @@
+
+<dl class="version-info">
+  <dt>Versión: <%= link_to_if(current_user.can_edit_version?(version) ,version.version_cod, edit_version_path(version) ) %></dt>
+
+  <dt>Fichero: <%=link_to image_tag("descargar.png"), version.doc.url if version.doc?  %></dt>
+
+  <% if version.licences_amount? %>
+      <dt>Licencias: <%=h version.licences_amount %> €</dt>
+  <% end %>
+
+  <% if version.recurrent_services_amount? %>
+      <dt>Servicios recurrentes: <%=h version.recurrent_services_amount %> €</dt>
+  <% end %>
+
+  <% if version.no_recurrent_services_amount? %>
+      <dt>Servicios no recurrentes: <%=h version.no_recurrent_services_amount %> €</dt>
+  <% end %>
+</dl>

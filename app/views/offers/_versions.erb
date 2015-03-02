@@ -1,0 +1,64 @@
+<table class="versions">
+  <tr>
+    <th class="change-version"></th>
+    <th>Código</th>
+    <th>Fichero</th>
+    <th>Fecha Inserción</th>
+    <th>Descripción</th>
+    <th>Licencias</th>    
+    <th>Servicios no recurrentes</th>
+    <th>Servicios recurrentes</th>
+
+  </tr>
+  <% form_for offer do |f| %>
+    <% offer.versions.reverse.each do |version| %>
+      <tr <%= "class='current-version'" if(offer.actual_version == version || (offer.id == 1467 || (offer.id == 1531 && version.cod == 3))) %> >
+        <td class="change-version"><%= f.radio_button :actual_version_index, version.cod-1 if version.offer.Pendiente? %></td>
+        <td class="first">
+          <%= link_to_if(current_user.can_edit_version?(version), version.version_cod, edit_version_path(version)) %>
+        </td>
+        <td><%= link_to image_tag("descargar.png"), version.doc.url if version.doc? %></td>
+        <td><%=l version.created_at, :format => :very_short %></td>
+        <td class="description"><%=h version.description %></td>
+        <td style="color:black">
+          <% if version.licences_amount.nil? %>
+            &mdash;
+          <% else %>
+            <%=h number_to_currency(version.licences_amount) %>
+          <% end %>
+        </td>
+        <td style="color:black">
+          <% if version.no_recurrent_services_amount.nil? %>
+            &mdash;
+          <% else %>
+            <%=h number_to_currency(version.no_recurrent_services_amount) %>
+          <% end %>
+        </td>
+        <td style="color:black">
+          <% if version.recurrent_services_amount.nil? %>
+            &mdash;
+          <% else %>
+            <%=h number_to_currency(version.recurrent_services_amount) %>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  <% end %>
+</table>
+
+<% if (offer.Pendiente? && offer.versions.length > 1 && current_user.can_edit_offer?(offer)) %>
+  <div class="change-actual-version"><%= link_to_function "Cambiar version actual", "$('.change-version').toggle()" %></div>
+<% end %>
+<div class="right">
+  <% if current_user.can_create_version?(offer) and offer.Pendiente? %>
+    <%= image_tag("add.png")  %>
+    <%= link_to( "Añadir versión", new_offer_version_url(offer)) %>
+  <% end %>
+</div>
+
+
+<script type="text/javascript">
+  $('input:radio').change(function(){
+    $('.edit_offer').submit();
+  });  
+</script>

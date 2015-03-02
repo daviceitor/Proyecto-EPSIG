@@ -1,0 +1,53 @@
+<div class="content">
+
+  <div class="content-header">
+    <p style="color: green"><%= notice %></p>
+    <div class="right">
+      <% if current_user.can_manage_crm? %>
+        <%= image_tag ("edit.png") %>
+        <%= link_to('Editar', edit_contact_path(@contact)) %>
+      <% end %>
+    </div>
+    <h2 class="title"><%=h "#{@contact.name} #{@contact.sur_name}" %></h2>
+  </div>
+
+  <div class="content-body">
+
+    <dl>
+      <dt><%= label_tag :account, "Cuenta:" %></dt>
+      <dd><%= link_to @contact.seat.account.name, @contact.seat.account %></dd>
+
+      <dt><%= label_tag :seat, "Sede:" %></dt>
+      <dd><%= link_to @contact.seat.name, @contact.seat.name != "(Sin Sede)"? @contact.seat : "#" %> </dd>
+
+      <dt><%= label_tag :name, "Nombre:" %></dt>
+      <dd><%=h "#{@contact.name} #{@contact.sur_name}" %></dd>
+
+      <dt><%= label_tag :description, "Descripción:" %> </dt>
+      <dd><%=h @contact.description %></dd>
+
+      <dt><%= label_tag :lead_source, "Fuente del lead:" %></dt>
+      <dd><%=h @contact.lead_source %></dd>
+
+      <dt><%= label_tag :title, "Cargo:" %></dt>
+      <dd><%=h @contact.title %></dd>
+
+      <dt><%= label_tag :department, "Departamento:" %></dt>
+      <dd><%=h @contact.department %></dd>
+
+      <dt><%= label_tag :contact_means, "Medios de contacto:" %></dt>
+      <dd><table id="medios">
+          <% @contact.contact_means.keys.sort.each do |key| %>
+            <tr>
+              <td><%= key %>:</td>
+              <td><%= @contact.contact_means[key] %></td>
+            </tr>
+          <% end %>
+        </table>
+      </dd>
+    </dl>
+
+    <div class="actions"></div>
+
+  </div>
+</div>

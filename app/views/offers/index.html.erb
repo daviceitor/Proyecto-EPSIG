@@ -1,0 +1,62 @@
+<%= javascript_include_tag "jquery-1.4.3.min.js" %>
+<%= javascript_include_tag "application.js" %>
+<%= stylesheet_link_tag 'offers.css' %>
+
+<div class="content">
+
+  <div class="content-header">
+    <p style="color: green"><%= notice %></p>
+    <div class="right">
+      <% if current_user.can_create_offer? %>
+        <%= image_tag("add.png") %>
+        <%= link_to('Nueva propuesta', new_offer_path) %>
+      <% end %>
+    </div>
+    <h2 class="title">Propuestas <span class="total">( <%= @offers.total_entries %> Propuestas )</span></h2>
+  </div>
+  <div class="content-body">
+
+    <h3>Filtrar por:</h3>
+    <div class="filters">
+      <% form_tag offers_path, :method => :get, :id => "filter_form" do -%>        
+        <table class="filters">
+          <tr>
+            <td>Cuenta:</td><td colspan="3"><%= select_tag  "filter[account_id]", options_for_select(get_accounts_for_select.insert(0,["Todas",""]), :selected => @filter[:account_id].to_i), :id => "account", :class => "filter" %></td>
+            <td>Código:</td><td><%= text_field_tag  "filter[id]", @filter["id"], :id => "id", :class => "filter", :size => 6 %></td>
+          </tr>
+          <tr>
+            <td>Estado:</td> <td><%= select_tag  "filter[state]", options_for_select(Offer.filter_states.insert(0,["Todos",""]), :selected => @filter[:state]), :id => "state", :class => "filter" %></td>
+            <td>Comercial:</td> <td><%= select_tag  "filter[commercial_id]", options_for_select(get_account_manager_for_select.insert(0,["Todos",""]), :selected => @filter[:commercial_id].to_i), :id => "commercial", :class => "filter" %></td>
+            <td>Fabricante:</td> <td> <%= select_tag  "filter[offer_type_id]", options_for_select(get_offer_types_for_select.insert(0,["Todos",""]), :selected => @filter[:offer_type_id].to_i), :id => "type", :class => "filter" %></td>
+          </tr>
+          <tr>
+            <td>Jefe de proyecto:</td> <td> <%= select_tag  "filter[responsable_id]", options_for_select(get_project_managers_for_select.insert(0,["Todos",""]), :selected => @filter[:responsable_id].to_i), :id => "responsable", :class => "filter" %></td>
+            <td>Facturada:</td> <td> <%= select_tag  "filter[full_billed]", options_for_select(get_billed_filter_for_select.insert(0,["Todas",""]), :selected => @filter[:full_billed]), :id => "full_billed", :class => "filter" %></td>
+            <td>Cobrada:</td> <td> <%= select_tag  "filter[full_charged]", options_for_select(get_charged_filter_for_select.insert(0,["Todas",""]), :selected => @filter[:full_charged]), :id => "full_charged", :class => "filter" %></td>
+          </tr>
+        </table>
+      <% end %>
+    </div>
+
+
+    <div id="offers-list">
+      <%= render :partial => "list" %>
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready (function(){
+      $(".filter").change(function(){        
+        $("#filter_form").submit();
+      });
+
+      $.each($('.filter'), function(i,s){
+        if($(this).val().length > 0){
+          $("body").scrollTop(110);
+        }
+      });
+    });
+  </script>
+
+</div>

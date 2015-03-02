@@ -1,0 +1,50 @@
+<%= javascript_include_tag "jquery-1.4.3.min.js" %>
+<%= javascript_include_tag "application.js" %>
+
+<div class="content">
+
+  <div class="content-header">
+    <p style="color: green"><%= notice %></p>
+    <h2 class="title">Nueva Sede</h2>
+  </div>
+
+  <div class="content-body">
+
+    <% form_for(@seat) do |f| %>
+      <%= f.error_messages %>
+
+      <dl>
+        <dt><%= f.label :account, "Cuenta"  %></dt>
+        <dd><%= f.select :account_id, get_accounts_for_select, :selected => @account_id.to_i %></dd>
+
+        <dt><%= f.label :name %></dt>
+        <dd><%= f.text_field :name %></dd>
+
+        <dt><%= f.label :street %></dt>
+        <dd><%= f.text_field :street %></dd>
+
+        <dt><%= f.label :city %></dt>
+        <dd><%= f.text_field :city %></dd>
+
+        <dt><%= f.label :state %></dt>
+        <dd><%= f.text_field :state %></dd>
+
+        <dt><%= f.label :country %></dt>
+        <dd><%= f.text_field :country %></dd>
+
+        <dt><%= f.label :postalcode %></dt>
+        <dd><%= f.text_field :postalcode %></dd>
+
+        <%= render :partial => "common/contact_means", :locals => {:contacts => @seat} %>
+      </dl>
+
+      <div class="actions">
+        <%= image_tag('save.png') %>
+        <%= f.submit 'Crear sede', :class => "submit" %>
+        <%= image_tag("cancel.png")%> <%= link_to 'Volver', :back %>
+      </div>
+
+    <% end %>
+
+  </div>
+</div>

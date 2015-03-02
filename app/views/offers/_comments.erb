@@ -1,0 +1,10 @@
+<% @offer.comments.each do |c| %>
+  <div class="comment">
+    <%= c.comment %>
+  </div>
+  <span class="autor">
+    <%= "#{c.user.name}, " unless c.user.Admin? %>
+    <%= l c.created_at, :format => :short %></span>
+<% end %>
+<%= text_area_tag "comment", "", :rows => "2", :cols => "64", :class => "add-comment" %><br/>
+<%= button_to_function "Comentar", "add_comment('offers','add_comment',#{@offer.id})", :class => "comment" %>

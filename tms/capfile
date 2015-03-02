@@ -1,0 +1,2 @@
+set :stages, %w(preproduction production)
+require 'capistrano/ext/multistage'

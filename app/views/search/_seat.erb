@@ -1,0 +1,9 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+<div class="search-item-model"><%= model.class.human_name %></div>
+<ul>
+  <li class="first-item"><%= link_to model.name, model %></li>
+  <li class="second-item"><%= link_to model.account.name, model.account unless model.account.nil? %></li>
+</ul>
